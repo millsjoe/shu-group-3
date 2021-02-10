@@ -82,17 +82,17 @@ router.post('/register', (req, res) => {
 //Login Handle
 router.post('/login', (req, res, next) => {
     passport.authenticate('local', {
-        successRedirect: '/home',
-        failureRedirect: '/login',
-        failureFlash: true
+      successRedirect: '/home',
+      failureRedirect: '/login',
+      failureFlash: true
     })(req, res, next);
-});
-
-//Logout Handle
-router.get('/logout', (req, res) => {
+  });
+  
+  //Logout Handle
+  router.get('/logout', (req, res) => {
     req.logout();
-    req.flash('success_msg', 'You have successfully logged out');
+    req.flash('success_msg', 'You are logged out');
     res.redirect('/login');
-});
+  });  
 
 module.exports = router;
