@@ -19,7 +19,7 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err));
 
-//CSS
+//CSS + JavaScript
 app.use(express.static(__dirname + '/public'));
 
 //EJS
@@ -28,6 +28,7 @@ app.set('view engine', 'ejs');
 
 //BodyParser
 app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
 
 // Express Session
 app.use(
@@ -56,6 +57,7 @@ app.use((req, res, next) => {
 //Routes
 app.use('/', require('./routes/index'));
 app.use('/', require('./routes/users'));
+app.use('/ratings', require('./routes/ratings'));
 
 //Listening on port 3000
 const PORT = process.env.PORT || 3000;

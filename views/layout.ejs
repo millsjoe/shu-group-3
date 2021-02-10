@@ -12,6 +12,7 @@
         <title>CoffeeHouse App</title>
     </head>
     <body>  
+      <% if(typeof name === 'undefined') { %>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
             <div class="navbar-header">
@@ -35,6 +36,34 @@
             </div>
             </div>
         </nav>
+        <% } else { %>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/"><em>CoffeeHouse</em></a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+              
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="home">Home <span class="sr-only">(current)</span></a></li>
+                  <li><a href="profile">Profile</a></li>
+                  <li><a href="logout">Logout</a></li>
+              </ul>
+          </div>
+          </div>
+      </nav>
+      <% } %>
+
+
+
         <div class="container">
             <%- body %>
         </div>
@@ -43,26 +72,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"crossorigin="anonymous"></script>
     </body>
 
-    <footer>
-      <div class="footer-wrapper content-width">
-        <ul id="footerlist">
-          <li>
-            <a href="https://www.instagram.com/">
-                <img src="../Images/instagramimage.jpg" alt="Instagram Logo" style="width:50px;height:50px;"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/?lang=en-gb">
-                <img src="../Images/twitterlogo.jpg" alt="Twitter Logo" style="width:50px;height:50px;">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/watch?v=TlB_eWDSMt4&feature=youtu.be">
-                <img src="../Images/youtubeimage.jpg" alt="Youtube Logo" style="width:50px;height:50px;" >
-            </a>
-          </li>
-        </ul>
-        <h5 class="copy">&copy; Coffee House 2021.</h5>
+ <!-- Footer  -->
+<footer class="footer">
+  <div class="container text-center">
+    <span class="text-muted"><h5 class="copy">&copy; Coffee House 2021.</h5></span>
+      <div class="footer-wrapper text-center">
+        <a href="https://www.youtube.com/watch?v=TlB_eWDSMt4&feature=youtu.be"><img id="footer-icon" src="../Images/youtubeimage.jpg" alt="Youtube Logo" style="width:35px;height:35px;" ></a>
+        <a href="https://twitter.com/?lang=en-gb"><img id="footer-icon" src="../Images/twitterlogo.jpg" alt="Twitter Logo" style="width:35px;height:35px;"></a>
+        <a href="#"><img id="footer-icon" src="../Images/instagramimage.jpg" alt="Instagram Logo" style="width:35px;height:35px;"/></a>
       </div>
+  </div>
 </footer>
 </html>

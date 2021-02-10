@@ -1,8 +1,12 @@
 //Creating Rating schema for Database
-
 const mongoose = require('mongoose');
 
 const RatingSchema = new mongoose.Schema({
+    coffee_shop: {
+        type: String,
+        required: true,
+        trim: true
+    },
     overall: {
         type: Number,
         required: true
@@ -11,7 +15,7 @@ const RatingSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    coffee: {
+    coffee_quality: {
         type: Number,
         required: true
     },

@@ -1,19 +1,12 @@
-<h1 class="mt-4">Dashboard</h1>
 <p class="lead mb-3">Welcome <%= name %></p>
-<a href="/logout" class="btn btn-secondary">Logout</a>
 
-
-<% if(ratings) { %>
-  <p> You have not created any ratings </p>
-
-<% } %>
-<!-- <div class="jumbotron">
+<div class="jumbotron">
   <h1><em>Coffee House</em></h1>
   <p>
     Coffee House is the place to rate and review your favourite coffees from your local Coffee Houses. Get started below by using the map to find your local Cafe and rate any individual coffee of your choice! 
     You'll be able to see your most recent review below or all the reviews you've created in your Profile tab.
   </p>
-  <p><a class="btn btn-primary btn-lg">Profile</a></p>
+  <p><a href="/profile" class="btn btn-primary btn-lg">Profile</a></p>
 </div>
 
 <div class="container">
@@ -113,4 +106,6 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
+
+<a href="/logout" class="btn btn-default" id="dashboard-logout">Logout</a>

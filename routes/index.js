@@ -22,4 +22,19 @@ router.get('/home', ensureAuthenticated, async (req, res) => {
     }  
 });
 
+//Profile (logged in)
+router.get('/profile', ensureAuthenticated, async (req, res) => {
+    try {
+        const ratings = await Rating.find({user: req.user.id})
+        
+        res.render('profile', {
+            name: req.user.name,
+            ratings
+        })
+    }   catch (err) {
+        console.error(err)
+        //need to add error message
+    }  
+});
+
 module.exports = router;
