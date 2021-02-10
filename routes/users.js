@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
+//Profile Page
+router.get('/profile', (req, res) => res.render('Profile'));
+
 //Login Page
 router.get('/login', (req, res) => res.render('Login'));
 
