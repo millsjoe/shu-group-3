@@ -4219,7 +4219,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 14.5px 15px;
-  font-size: 19px;
+  font-size: 50px;
   line-height: 21px;
 }
 .navbar-brand:hover,
@@ -4900,17 +4900,19 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #e6e6e6;
+  color: rgb(223, 219, 219);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.photowall.com/products/49771/coffee-beans.jpg?h=699&q=85);
 }
+
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: white;
+  font-weight: bolder;
 }
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 23px;
-  font-weight: 200;
+  font-weight: bold;
 }
 .jumbotron > hr {
   border-top-color: #cccccc;
@@ -5371,6 +5373,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  display: inline-block;
 }
 .panel-heading {
   padding: 10px 15px;
