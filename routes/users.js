@@ -6,6 +6,9 @@ const passport = require('passport');
 //User model
 const User = require('../models/User');
 
+
+//User model
+const User = require('../models/User');
 //Login Page
 router.get('/login', (req, res) => res.render('Login'));
 
