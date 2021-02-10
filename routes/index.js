@@ -1,11 +1,15 @@
-//code from Chris
-const express = require("express");
+const express = require('express');
+const googleAPIs = require('../places');
 const router = express.Router();
 const bodyParser = require("body-parser");
 
+let max = 5;
+let shops = [];
 router.get('/', (req, res) => res.render('index'));
 
-router.get('/home', (req, res) => res.render('home'));
+router.get('/home', (req, res) => {
+    res.render('home');
+});
 
 module.exports = router;
 // const Users = {
@@ -105,3 +109,32 @@ const hashString = function (string) {
 // app.listen(port, () => {
 //   console.log(`Example app listening at http://localhost:${port}`);
 // });
+router.post('/', (req, res) => {
+    const { postCode } = req.body;
+    setLocalShops(postCode);
+    const shopsToReturn = getLocalShops(max);
+    res.render('shops', {shops: shopsToReturn});
+});
+
+router.post('/shops', (req, res) => {
+    increaseLimit();
+    const shopsToReturn = getLocalShops(max);
+    res.render('shops', {shops: shopsToReturn});
+});
+
+module.exports = router;
+
+function setLocalShops(postcode) {
+    shops = googleAPIs.getCoffeeShops(postcode);
+}
+
+function getLocalShops(numShops) {
+    // console.log(shops.slice(1,numShops));
+    return shops.slice(1,numShops);
+}
+
+function increaseLimit() {
+    if (max <= shops.length){
+        max += 5;
+    }
+}

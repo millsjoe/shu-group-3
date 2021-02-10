@@ -41,11 +41,37 @@ function webCoffeeShops(lat, long) {
                 address : shop.formatted_address
             });
         })
-        console.log(nearestCoffee);
     });
 }
 
+function getCoffeeShops(postcode) {
+    const info = postCodeToLatLong(postcode);
+    const lat = info.lat;
+    const long = info.long;
+    const res = syncRequest('GET',`https://maps.googleapis.com/maps/api/place/textsearch/json?query=coffee+shop&location=${lat},${long}&radius=5&type=cafe&key=${api}`);
+    const data = JSON.parse(res.getBody());
 
-console.log(postCodeToLatLong('WF140QZ').lat);
+    let shops = [];
+    data.results.forEach(shop => {
+        let currentImage = 'https://www.pngonly.com/wp-content/uploads/2017/05/Coffee-Clipart-PNG-Image-01.png'
+        if (shop.photos != undefined) {
+                currentImage = buildImgUrl(shop.photos[0].photo_reference);
+        }
+        shops.push(
+            {
+                name : shop.name,
+                address : shop.formatted_address,
+                imageURL : currentImage
+            }
+        );
+    });
 
-console.log(postCodeToLatLong('WF140QZ').long);
+    return shops;
+
+}
+
+function buildImgUrl(reference) {
+    return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=${reference}&key=${api}`
+}
+
+module.exports = { getCoffeeShops }
