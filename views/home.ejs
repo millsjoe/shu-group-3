@@ -2,7 +2,12 @@
 <p class="lead mb-3">Welcome <%= name %></p>
 <a href="/logout" class="btn btn-secondary">Logout</a>
 
-<div class="jumbotron">
+
+<% if(ratings) { %>
+  <p> You have not created any ratings </p>
+
+<% } %>
+<!-- <div class="jumbotron">
   <h1><em>Coffee House</em></h1>
   <p>
     Coffee House is the place to rate and review your favourite coffees from your local Coffee Houses. Get started below by using the map to find your local Cafe and rate any individual coffee of your choice! 
@@ -108,4 +113,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
