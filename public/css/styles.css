@@ -1,7 +1,3 @@
-nav ul a {
-  color: black;
-}
-
 .navbar-default {
   background-color:grey;
   border-color: grey;
@@ -13,4 +9,102 @@ nav ul a {
   border: 1px solid transparent;
   border-radius: 0;
   margin-top: 8px; 
+}
+
+/*The User rating table*/
+.reviewtable {
+  box-sizing: border-box;
+}
+
+.reviewtable {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
+  padding: 20px;
+}
+
+.reviewheading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #272727;}
+.bar-4 {width: 30%; height: 18px; background-color: #272727;}
+.bar-3 {width: 10%; height: 18px; background-color: #272727;}
+.bar-2 {width: 4%; height: 18px; background-color: #272727;}
+.bar-1 {width: 15%; height: 18px; background-color: #272727;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}
+
+ul#footerlist {
+  list-style-type: none;
+  padding: 50px;
+  display: inline-block;
+  background: none;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+ul > li {
+  padding: 20px;
+}
+
+.copy {
+  margin: 20px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
 }

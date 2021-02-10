@@ -1,13 +1,41 @@
 <div class="jumbotron">
   <h1><em>Coffee House</em></h1>
-  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p>Coffee House is the place to rate and review your favourite coffees from your local Coffee Houses. Just Login / Register to get started!</p>
   <p><a class="btn btn-primary btn-lg">Learn more</a></p>
 </div>
-<div class="col-sm-12 text-center">
-  <div class="col-sm-6 center-block">
-    MAP
+
+<div class="container">
+  <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading">Map</div>
+        <div class="panel-body">
+          Map content
+          <div id="googleMap" style="width:100%;height:100px;"></div>
+          <script>
+            function myMap() {
+            var mapProp= {
+              center:new google.maps.LatLng(51.508742,-0.120850),
+              zoom:5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+          </script>
+          <script src="#"></script>
+      </div>
+    </div>
   </div>
-  <div class="col-sm-6 center-block">
-    SEARCH
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-heading">Search</div>
+      <div class="panel-body">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
+
