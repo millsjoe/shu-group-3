@@ -1,8 +1,9 @@
 const request = require("request");
 const syncRequest = require("sync-request");
 const { get } = require("https");
-let api = 'AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU';
+let api = ''; //INSERT API HERE (MESSAGE JOE)
 
+// Convert postcode to lat + long
 function postCodeToLatLong(postcode) {
     const postCodeToUse = postcode.trim();
     const res = syncRequest('GET', `http://api.getthedata.com/postcode/${postCodeToUse}`);
@@ -14,6 +15,7 @@ function postCodeToLatLong(postcode) {
     };
 }
 
+// Gets coffee shops via Google API - returns an object of shops
 function getCoffeeShops(postcode) {
     const info = postCodeToLatLong(postcode);
     const lat = info.lat;
@@ -24,9 +26,11 @@ function getCoffeeShops(postcode) {
     let shops = [];
 
     data.results.forEach(shop => {
+        // Default image for shops without any image
         let currentImage = 'https://www.pngonly.com/wp-content/uploads/2017/05/Coffee-Clipart-PNG-Image-01.png'
         if (shop.photos != undefined) {
-                currentImage = buildImgUrl(shop.photos[0].photo_reference);
+                const randomImage = randomArraySelect(shop.photos);
+                currentImage = buildImgUrl(randomImage.photo_reference);
         }
         shops.push(
             {
@@ -46,6 +50,10 @@ function getCoffeeShops(postcode) {
 
 function buildImgUrl(reference) {
     return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=${reference}&key=${api}`
+}
+
+function randomArraySelect(array) {
+    return array[Math.floor(Math.random() * array.length)];
 }
 
 module.exports = { getCoffeeShops }
