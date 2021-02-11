@@ -12,10 +12,6 @@
   margin-top: 8px; 
 }
 
-
-
-
-
 /*Profile style*/
 .profilecard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -33,10 +29,6 @@
   padding: 20px;
   margin-top: 20px;
 }
-
-
-
-
 
 
 /*interactive review*/
@@ -84,19 +76,16 @@
 .rating_stars span.r.r4_5 {left:93px; width: 12px;}
 .rating_stars span.r.r5 {left:105px; width: 12px;}
 
-
-
-
-
 /* INTERACTIVE REVIEW- TO LOOK PRETTY SECTION*/
 html, body {
-  text-align: center; 
+  /* text-align: center;  */
   font-family: Helvetica, Arial, sans-serif; 
   font-size: 12px;
-  height: 100%;
+  /* height: 100%; */
   color: rgb(5, 5, 5);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-}
+} 
+
 
 label {
   width: 100px;display: inline-block; text-align: right; margin-right: 10px;
@@ -113,13 +102,6 @@ input {
 .info {
   max-width: 500px; margin: 20px auto;
 }
-
-
-
-
-
-
-
 
 
 /*The STATIC USER RATING*/
@@ -193,12 +175,6 @@ input {
     display: none;
   }
 }
-
-
-
-
-
-
 
 
 
