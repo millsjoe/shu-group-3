@@ -1,0 +1,15 @@
+<h1 class="mt-4">Your Local Shops</h1>
+<body>
+  <div class="shopDisplay">
+    <ul>
+      <% shops.forEach(function(shop) { %>
+      <p><%= shop.name %> - <%= shop.address %></p>
+      <img src="<%= shop.imageURL %>" style="width: 100px; height: 100px;">
+      <% }) %>
+    </ul>
+  </div>
+  <form method="POST" action="/shops">
+    <button class="loadMore">Load More</button>
+  </form>
+</body>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
