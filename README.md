@@ -15,3 +15,6 @@ e.g. `$ cd Desktop/project`
 
 ## Install nodemon 
 `$ npm i -D nodemon`
+
+## Install request, sync-request 
+`$ npm install request sync-request`

@@ -1,5 +1,3 @@
-
-
 const request = require("request");
 const syncRequest = require("sync-request");
 const { get } = require("https");
