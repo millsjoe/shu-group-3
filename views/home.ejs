@@ -1,4 +1,9 @@
+
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome</p>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
 <p class="lead mb-3">Welcome <%= name %></p>
+
 
 <div class="jumbotron">
   <h1><em>Coffee House</em></h1>
@@ -6,13 +11,15 @@
     Coffee House is the place to rate and review your favourite coffees from your local Coffee Houses. Get started below by using the map to find your local Cafe and rate any individual coffee of your choice! 
     You'll be able to see your most recent review below or all the reviews you've created in your Profile tab.
   </p>
-  <p><a href="/profile" class="btn btn-primary btn-lg">Profile</a></p>
+
+  <p><a href="/profile" class="btn btn-primary btn-lg" >Your Profile</a></p>
+
 </div>
 
 <div class="container">
   <div class="row">
       <div class="panel panel-default">
-        <div class="panel-heading">Map</div>
+        <div class="panel-heading">MAP</div>
         <div class="panel-body">
           Map content
           <div id="googleMap" style="width:100%;height:100px;"></div>
@@ -31,7 +38,7 @@
   </div>
     <div class="row">
       <div class="panel panel-default">
-        <div class="panel-heading">Map</div>
+        <div class="panel-heading">YOUR MOST RECENT REVIEW</div>
         <div class="panel-body">
           <section class="reviewtable">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -56,6 +63,8 @@
               <div class="side right">
                 <div>4</div>
               </div>
+              <br>
+              <br>
               <div class="side">
                 <div>Coffee</div>
               </div>
@@ -67,6 +76,8 @@
               <div class="side right">
                <div>4.5</div>
               </div>
+              <br>
+              <br>
               <div class="side">
                 <div>Mood</div>
               </div>
@@ -78,6 +89,8 @@
               <div class="side right">
                 <div>4</div>
               </div>
+              <br>
+              <br>
               <div class="side">
                 <div>Dairy-Free</div>
               </div>
@@ -89,6 +102,8 @@
               <div class="side right">
                 <div>2</div>
               </div>
+              <br>
+              <br>
               <div class="side">
                 <div>Eco</div>
               </div>
@@ -108,4 +123,6 @@
   </div>
 </div>
 
+
 <a href="/logout" class="btn btn-default" id="dashboard-logout">Logout</a>
+
