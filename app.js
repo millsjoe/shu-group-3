@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session'); 
 const passport = require('passport');
+const methodOverride = require('method-override');
 
 //Creating App
 const app = express();
@@ -30,6 +31,18 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
+// Method Override
+app.use(
+  methodOverride(function (req, res) {
+    if (req.body && typeof req.body === 'object' && '_method' in req.body) {
+      // look in urlencoded POST bodies and delete it
+      let method = req.body._method
+      delete req.body._method
+      return method
+    }
+  })
+);
+
 // Express Session
 app.use(
     session({
@@ -52,6 +65,11 @@ app.use((req, res, next) => {
     res.locals.error_msg = req.flash('error_msg');
     res.locals.error = req.flash('error');
     next();
+});
+
+app.use((req, res, next) => {
+  res.locals.user = req.user || null
+  next();
 });
 
 //Routes
