@@ -1,3 +1,4 @@
+/*NAV BAR*/
 .navbar-default {
   background-color:grey;
   border-color: grey;
@@ -11,15 +12,125 @@
   margin-top: 8px; 
 }
 
-/*The User rating table*/
+
+
+
+
+/*Profile style*/
+.profilecard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.profiletitle {
+  color: grey;
+  font-size: 18px;
+}
+
+#reviewbutton{
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+/*interactive review*/
+.rating_stars {
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 200;
+  color: #918f8f;
+  position: relative;
+}
+
+.rating_stars span .fa, .rating_stars span.active-low .fa-star-o, .rating_stars span.active-high .fa-star-o{
+	display: none;
+}
+
+.rating_stars span .fa-star-o{
+	display: inline-block;
+}
+
+.rating_stars span.s.active-high .fa-star{
+	display: inline-block; color: #feb645;
+}
+
+.rating_stars span.s.active-low .fa-star-half-o{
+	display: inline-block; color: #feb645;
+}
+
+.rating_stars span.r {
+	position: absolute;
+	top: 0;
+	height: 20px;
+	width: 10px;
+	left: 0;
+}
+
+.rating_stars span.r.r0_5 {left:0px;}
+.rating_stars span.r.r1 {left:10px; width: 11px;}
+.rating_stars span.r.r1_5 {left:21px; width: 13px;}
+.rating_stars span.r.r2 {left:34px; width: 12px;}
+.rating_stars span.r.r2_5 {left:46px; width: 12px;}
+.rating_stars span.r.r3 {left:58px; width: 11px;}
+.rating_stars span.r.r3_5 {left:69px; width: 12px;}
+.rating_stars span.r.r4 {left:81px; width: 12px;}
+.rating_stars span.r.r4_5 {left:93px; width: 12px;}
+.rating_stars span.r.r5 {left:105px; width: 12px;}
+
+
+
+
+
+/* INTERACTIVE REVIEW- TO LOOK PRETTY SECTION*/
+html, body {
+  text-align: center; 
+  font-family: Helvetica, Arial, sans-serif; 
+  font-size: 12px;
+  height: 100%;
+  color: rgb(5, 5, 5);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+label {
+  width: 100px;display: inline-block; text-align: right; margin-right: 10px;
+}
+
+input {
+  width: 50px; text-align: center;
+}
+
+.values {
+  margin-top: 20px;
+}
+
+.info {
+  max-width: 500px; margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+/*The STATIC USER RATING*/
 .reviewtable {
   box-sizing: border-box;
 }
 
 .reviewtable {
   font-family: Arial;
-  margin: 0 auto; /* Center website */
-  max-width: 800px; /* Max width */
+  margin: 0 auto;
+  max-width: 800px;
   padding: 20px;
 }
 
@@ -36,7 +147,6 @@
   color: orange;
 }
 
-/* Three column layout */
 .side {
   float: left;
   width: 15%;
@@ -49,19 +159,16 @@
   margin-top: 10px;
 }
 
-/* Place text to the right */
 .right {
   text-align: right;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* The bar container */
 .bar-container {
   width: 100%;
   background-color: #f1f1f1;
@@ -69,7 +176,7 @@
   color: white;
 }
 
-/* Individual bars */
+/* The Individual bars within the static review */
 .bar-5 {width: 60%; height: 18px; background-color: #272727;}
 .bar-4 {width: 30%; height: 18px; background-color: #272727;}
 .bar-3 {width: 10%; height: 18px; background-color: #272727;}
@@ -87,6 +194,15 @@
   }
 }
 
+
+
+
+
+
+
+
+
+/*FOOTER*/
 ul#footerlist {
   list-style-type: none;
   padding: 50px;
@@ -107,4 +223,23 @@ ul > li {
   display: inline-block;
   text-align: center;
   justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 110px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+#footer-icon {
+  margin-top: -30px;
+  margin-left: 30px;
+}
+
+#dashboard-logout {
+  margin-top: 20px;
 }

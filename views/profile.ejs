@@ -1,0 +1,112 @@
+
+<h1 class="mt-4">Profile</h1>
+<p class="lead mb-3">Welcome insert the name here</p>
+<a href="/logout" class="btn btn-secondary">Logout</a>
+
+<div class="jumbotron">
+  <h1><em>Coffee House</em></h1>
+  <p>
+    Welcome to your Profile! Please add a review in the section below or see your personal Coffee House recommendations!
+  </p>
+  <p><a href="/home" class="btn btn-primary btn-lg">Back to the Dashboard</a></p>
+</div>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="profilecard">
+    <img src="../Images/profileimage.png" alt="add image" style="width:100%">
+    <h1>insert the name here</h1>
+    <p class="profiletitle">Favourite Drink:</p>
+    <p>Location:</p>
+    <p>Recent Trip:</p>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">CREATE A REVIEW</div>
+            <div class="panel-body">
+                <p>
+                    Use the stars below to rate your specific drink at any location!
+                </p>
+                <span class="rating_stars rating_0">
+                  <span class='s' data-low='0.5' data-high='1'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                  <span class='s' data-low='1.5' data-high='2'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                  <span class='s' data-low='2.5' data-high='3'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                  <span class='s' data-low='3.5' data-high='4'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                  <span class='s' data-low='4.5' data-high='5'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+						
+                <span class='r r0_5' data-rating='1' data-value='0.5'></span>
+                <span class='r r1' data-rating='1' data-value='1'></span>
+                <span class='r r1_5' data-rating='1.5' data-value='1.5'></span>
+                <span class='r r2' data-rating='2' data-value='2'></span>
+                <span class='r r2_5' data-rating='2.5' data-value='2.5'></span>
+                <span class='r r3' data-rating='3' data-value='3'></span>
+                <span class='r r3_5' data-rating='3.5' data-value='3.5'></span>
+                <span class='r r4' data-rating='4' data-value='4'></span>
+                <span class='r r4_5' data-rating='4.5' data-value='4.5'></span>
+                <span class='r r5' data-rating='5' data-value='5'></span>
+              </span>
+
+              <div class="values">
+                <div>
+                  <label>Overall Rating:</label><input type="number" id="rating" value="0" max="5" required/>
+                  <label>Drink Type:</label><input type="text" required/>
+                  <label>Coffee House:</label><input type="text" required/>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-default" id="reviewbutton">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= name %></p>
+
+<% if(ratings == 0) { %>
+  <p> You have not created any ratings </p>
+<% } else { %>
+
+    <table class="table table-striped table-hover ">
+        <thead>
+        <tr>
+            <th>Coffee Shop</th>
+            <th>Overall Rating</th>
+            <th>Atmosphere</th>
+            <th>Coffee Quality</th>
+            <th>Dairy Free Options</th>
+            <th>Favourite Drink</th>
+        </tr>
+        </thead>
+        <tbody>
+            <% if(ratings) { %>
+                <% ratings.forEach(function(ratings) { %>
+                    <tr>
+                        <td><%= ratings.coffee_shop %></td>
+                        <td><%= ratings.overall %></td>
+                        <td><%= ratings.atmosphere %></td>
+                        <td><%= ratings.coffee_quality %></td>
+                        <td><%= ratings.dairy_free %></td>
+                        <td><%= ratings.favourite_drink %></td>
+                        <td><a>Edit</a></td>
+                        <td><a>Delete</a></td>
+                    </tr>
+                <% }); %>
+            <% } %>
+        </tbody>
+    </table>
+<% } %>
+
+<a href="/ratings/add" class="btn btn-secondary"><i class="fas fa-plus"></i> Add Rating</a><br>
+
+<a href="/logout" class="btn btn-default" id="dashboard-logout">Logout</a>
+

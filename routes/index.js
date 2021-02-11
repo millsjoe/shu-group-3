@@ -1,25 +1,46 @@
-const express = require('express');
-const googleAPIs = require('../places');
+
+const express = require("express");
 const router = express.Router();
+const googleAPIs = require('../places');
 const bodyParser = require("body-parser");
 const Shop = require('../models/Shops');
+const { ensureAuthenticated } = require('../config/auth');
 
-let max = 5;
-let shops = [];
+const Rating = require('../models/Rating')
+
+//Welcome page (not logged in)
 router.get('/', (req, res) => res.render('index'));
 
-router.get('/home', (req, res) => {
-    res.render('home');
+//Homepage (logged in)
+router.get('/home', ensureAuthenticated, async (req, res) => {
+    try {
+        const ratings = await Rating.find({user: req.user.id})
+        
+        res.render('home', {
+            name: req.user.name,
+            ratings
+        })
+    }   catch (err) {
+        console.error(err)
+        //need to add error message
+    }  
 });
 
-const checkUserPassword = function (username, password) {
-  // return password == getUsersPassword(username)
-  return hashString(password) == getUsersPassword(username);
-};
+//Profile (logged in)
+router.get('/profile', ensureAuthenticated, async (req, res) => {
+    try {
+        const ratings = await Rating.find({user: req.user.id})
+        
+        res.render('profile', {
+            name: req.user.name,
+            ratings
+        })
+    }   catch (err) {
+        console.error(err)
+        //need to add error message
+    }  
+});
 
-const hashString = function (string) {
-  return crypto.createHash("sha256").update(string).digest("hex");
-};
 
 router.post('/', (req, res) => {
     const { postCode } = req.body;
@@ -90,3 +111,5 @@ function increaseLimit() {
         max += 5;
     }
 }
+
+module.exports = router;
