@@ -17,7 +17,7 @@ const ShopSchema = new mongoose.Schema({
     },
     imageURL: {
         type: String,
-        required: false
+        required: true
     },
     lat: {
         type: String,

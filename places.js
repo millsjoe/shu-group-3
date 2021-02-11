@@ -4,8 +4,7 @@ const { get } = require("https");
 let api = 'AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU';
 
 function postCodeToLatLong(postcode) {
-    const postCodeToUse = postcode.trim();
-    const res = syncRequest('GET', `http://api.getthedata.com/postcode/${postCodeToUse}`);
+    const res = syncRequest('GET', `http://api.getthedata.com/postcode/${postcode}`);
     const data = JSON.parse(res.getBody());
 
     return {

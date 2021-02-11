@@ -44,8 +44,8 @@ router.get('/profile', ensureAuthenticated, async (req, res) => {
 
 
 router.post('/', (req, res) => {
-    const { postCode } = req.body;
-
+    let { postCode } = req.body;
+    postCode = postCode.toFormattedPostCode();
     Shop.find({ postcodes: postCode}).then(shop => {
         if (shop.length != 0){
             shops = shop;
@@ -66,7 +66,7 @@ router.post('/', (req, res) => {
                         const id = newShopFromCall.id;
                         const name =    newShopFromCall.name;
                         const address = newShopFromCall.address;
-                        const imageurl = newShopFromCall.imageURL;
+                        const imageURL = newShopFromCall.imageURL;
                         const lat = newShopFromCall.lat;
                         const lng = newShopFromCall.lng;
                         const postcodes = newShopFromCall.postcodes;
@@ -74,7 +74,7 @@ router.post('/', (req, res) => {
                             id,
                             name,
                             address,
-                            imageurl,
+                            imageURL,
                             lat,
                             lng,
                             postcodes
@@ -97,6 +97,21 @@ router.post('/shops', (req, res) => {
     res.render('shops', {shops: shopsToReturn});
 });
 
+router.get('/shops/:id', (req,res) => {
+    const id = req.params.id;
+    Shop.findOne({id : id}).then(shopInfo => {
+        console.log(shopInfo.name);
+        res.render('shopInfo',
+        {
+            name : shopInfo.name,
+            address : shopInfo.address,
+            img : shopInfo.imageURL,
+            lat : shopInfo.lat,
+            lng : shopInfo.lng
+        });
+    })
+})
+
 module.exports = router;
 
 function setLocalShops(postcode) {
@@ -111,6 +126,15 @@ function increaseLimit() {
     if (max <= shops.length){
         max += 5;
     }
+}
+
+function formatPostcode(postcode) { 
+    console.log(postcode.postCode.toUpperCase().trim());
+    return postcode.postCode.toUpperCase();
+}
+
+String.prototype.toFormattedPostCode = function(){
+    return this.toUpperCase().replace(' ', '');
 }
 
 module.exports = router;
