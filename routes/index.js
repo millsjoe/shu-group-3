@@ -5,8 +5,10 @@ const googleAPIs = require('../places');
 const bodyParser = require("body-parser");
 const Shop = require('../models/Shops');
 const { ensureAuthenticated } = require('../config/auth');
-
 const Rating = require('../models/Rating')
+
+let max = 5;
+let shops = [];
 
 //Welcome page (not logged in)
 router.get('/', (req, res) => res.render('index'));
