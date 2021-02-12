@@ -23,7 +23,7 @@ router.get('/home', ensureAuthenticated, async (req, res) => {
         })
     }   catch (err) {
         console.error(err)
-        //need to add error message
+        res.render('error/500')
     }  
 });
 
@@ -38,7 +38,7 @@ router.get('/profile', ensureAuthenticated, async (req, res) => {
         })
     }   catch (err) {
         console.error(err)
-        //need to add error message
+        res.render('error/500')
     }  
 });
 

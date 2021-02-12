@@ -18,3 +18,6 @@ e.g. `$ cd Desktop/project`
 
 ## Install request, sync-request 
 `$ npm install request sync-request`
+
+## Install request, sync-request 
+`$ npm install method-override`
