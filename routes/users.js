@@ -31,7 +31,7 @@ router.post('/register', (req, res) => {
     }
 
     //Check password length
-    if (password.length < 6) {
+     if (password.length < 6) {
         errors.push({msg: 'Password should be at least 6 characters'});
     }
 
