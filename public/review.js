@@ -1,47 +1,27 @@
-jQuery(document).ready(function ($) {
-  $(".rating_stars span.r")
-    .hover(
-      function () {
-        // get hovered value
-        var rating = $(this).data("rating");
-        var value = $(this).data("value");
-        $(this)
-          .parent()
-          .attr("class", "")
-          .addClass("rating_stars")
-          .addClass("rating_" + rating);
-        highlight_star(value);
-      },
-      function () {
-        // get hidden field value
-        var rating = $("#rating").val();
-        var value = $("#rating_val").val();
-        $(this)
-          .parent()
-          .attr("class", "")
-          .addClass("rating_stars")
-          .addClass("rating_" + rating);
-        highlight_star(value);
-      }
-    )
-    .click(function () {
-      // Set hidden field value
-      var value = $(this).data("value");
-      $("#rating_val").val(value);
 
-      var rating = $(this).data("rating");
-      $("#rating").val(rating);
+$(document).ready(function(){
 
-      highlight_star(value);
-    });
+  const overall = $('#overall');
+  const atmosphere = $('#atmosphere');
+  const coffee_quality = $('#coffee_quality');
+  const dairy_free = $('#dairy_free');
+  const star1 = $('[name="rating"]');
+  const star2 = $('[name="rating1"]');
+  const star3 = $('[name="rating2"]');
+  const star4 = $('[name="rating3"]');
+  
+  star1.click(function(event){
+      overall.val(event.target.value);
+  });
+  star2.click(function(event){
+      atmosphere.val(event.target.value);
+  });
 
-  var highlight_star = function (rating) {
-    $(".rating_stars span.s").each(function () {
-      var low = $(this).data("low");
-      var high = $(this).data("high");
-      $(this).removeClass("active-high").removeClass("active-low");
-      if (rating >= high) $(this).addClass("active-high");
-      else if (rating == low) $(this).addClass("active-low");
-    });
-  };
+  star3.click(function(event){
+      coffee_quality.val(event.target.value);
+  });
+
+  star4.click(function(event){
+      dairy_free.val(event.target.value);
+  });
 });

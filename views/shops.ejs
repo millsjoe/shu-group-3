@@ -4,7 +4,9 @@
     <ul>
       <% shops.forEach(function(shop) { %>
       <p><%= shop.name %> - <%= shop.address %></p>
-      <img src="<%= shop.imageURL %>" style="width: 100px; height: 100px;">
+      <a href="shops/<%= shop.id %>">
+        <img src="<%= shop.imageURL %>" style="width: 100px; height: 100px;">
+      </a>
       <% }) %>
     </ul>
   </div>

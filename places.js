@@ -5,8 +5,7 @@ let api = ''; //INSERT API HERE (MESSAGE JOE)
 
 // Convert postcode to lat + long
 function postCodeToLatLong(postcode) {
-    const postCodeToUse = postcode.trim();
-    const res = syncRequest('GET', `http://api.getthedata.com/postcode/${postCodeToUse}`);
+    const res = syncRequest('GET', `http://api.getthedata.com/postcode/${postcode}`);
     const data = JSON.parse(res.getBody());
 
     return {
