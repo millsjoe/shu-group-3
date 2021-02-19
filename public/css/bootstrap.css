@@ -4901,7 +4901,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: rgb(223, 219, 219);
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.photowall.com/products/49771/coffee-beans.jpg?h=699&q=85);
+  /* background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.photowall.com/products/49771/coffee-beans.jpg?h=699&q=85); */
 }
 
 .jumbotron h1,
