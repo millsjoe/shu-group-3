@@ -116,8 +116,16 @@ html, body {
 
 h1 {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
-  font-size: 30px;
+  /* font-size: 30px; */
   font-weight: bold;
+  color: #434343;
+}
+
+h2 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+  /* font-size: 30px; */
+  font-weight: bold;
+  color: #434343;
 }
 
 /* label {
@@ -237,7 +245,6 @@ ul > li {
 }
 
 .copy {
-  margin: 20px;
   width: 100%;
   display: inline-block;
   text-align: center;
@@ -273,4 +280,97 @@ ul > li {
   border-color: #2ECC71;
   font-weight: bold;
   border-radius: 30px;
+}
+
+.btn-primary:hover {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  color: #fff;
+  filter: brightness(85%);
+}
+
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  color: #fff;
+  filter: brightness(85%);
+}
+
+.btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  color: #fff;
+  filter: brightness(85%);
+}
+
+.jumbotron h1, .jumbotron .h1 {
+color: #434343;
+}
+
+.jumbotron p {
+  padding: 10px 0px;
+  color: #434343;
+  font-weight: 300;
+}
+
+#home-page-list {
+  padding: 10px 0px;
+  font-size: 24px;
+  color: #434343;
+  font-weight: 300;
+}
+
+
+#sm-footer {
+  justify-content: center;
+  position: fixed; 
+  bottom: 0; 
+  background-color: #F18343;
+  width: 100vw; 
+  /* height: 15vh;  */
+  display: flex;
+  font-size: 2rem; 
+  font-family: 'Roboto Slab', sans-serif; 
+  padding-bottom: 10px;
+}
+
+#sm-footer a {
+ color: #fff;
+ padding-left: 20px;
+}
+
+#sm-footer a:hover {
+  filter: brightness(85%);
+}
+
+#instructions p {
+  padding: 10px;
+}
+#instructions h3 {
+font-size: 26px;
+font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+margin-bottom: -20px;
+}
+
+#instructions {
+  margin-bottom: 10px;
+}
+
+#map {
+  margin-bottom: 120px;
+}
+
+.control-label {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 28px;
+  color: #434343;
+}
+
+.input-group .form-control {
+  border-radius: 30px;
+}
+
+#profile-buttons {
+  margin-bottom: 100px;
 }
