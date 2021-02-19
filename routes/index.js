@@ -59,7 +59,7 @@ router.get('/profile', ensureAuthenticated, async (req, res) => {
 });
 
 
-router.post('/', (req, res) => {
+router.post('/shop-results', (req, res) => {
     let { postCode } = req.body;
     postCode = postCode.toFormattedPostCode();
     Shop.find({ postcodes: postCode}).then(shop => {
