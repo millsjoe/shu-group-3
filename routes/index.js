@@ -101,9 +101,11 @@ router.get('/shops/:id', (req,res) => {
     const id = req.params.id;
     Shop.findOne({id : id}).then(shopInfo => {
         console.log(shopInfo.name);
+        const formattedName = shopInfo.name.replace("&","and");
         res.render('shopInfo',
         {
             name : shopInfo.name,
+            formattedName : formattedName,
             address : shopInfo.address,
             img : shopInfo.imageURL,
             lat : shopInfo.lat,
@@ -111,6 +113,7 @@ router.get('/shops/:id', (req,res) => {
         });
     })
 })
+
 
 module.exports = router;
 
