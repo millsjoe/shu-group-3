@@ -1,0 +1,54 @@
+<h1 class="mt-4">Admin page</h1>
+<p class="lead mb-3">Welcome <%= name %></p>
+<p>As an admin you can edit and delete any ratings that are non-compliant with Coffee House.</p>
+
+<div class="container">
+    <div class="row">
+      <%- include ("./partials/messages"); %>
+      <h3>All Ratings:</h3>
+      <br>
+        <div class="panel panel-default">
+            <% if(allRatings == 0) { %>
+              <p> There are no ratings </p>
+            <% } else { %>
+              <table class="table table-striped table-hover ">
+                  <thead>
+                  <tr>
+                      <th>Coffee Shop</th>
+                      <th>Overall Rating</th>
+                      <th>Atmosphere</th>
+                      <th>Coffee Quality</th>
+                      <th>Dairy Free Options</th>
+                      <th>Favourite Drink</th>
+                      <th></th>
+                      <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                      <% if(allRatings) { %>
+                          <% allRatings.forEach(function(allRatings) { %>
+                              <tr>
+                                  <td><%= allRatings.coffee_shop %></td>
+                                  <td><%= allRatings.overall %></td>
+                                  <td><%= allRatings.atmosphere %></td>
+                                  <td><%= allRatings.coffee_quality %></td>
+                                  <td><%= allRatings.dairy_free %></td>
+                                  <td><%= allRatings.favourite_drink %></td>
+                                  <td><a href="/admin/edit/<%=allRatings.id%>">Edit</a></td>
+                                  <td>
+                                    <form action="admin/<%=allRatings.id%>" method="POST" id="delete-form">
+                                      <input type="hidden" name="_method" value="DELETE">
+                                      <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-trash"></i>
+                                      </button>
+                                    </form>
+                                  </td>
+                              </tr>
+                          <% }); %>
+                      <% } %>
+                  </tbody>
+              </table>
+            <% } %>
+      </div>
+    </div>
+  </div>

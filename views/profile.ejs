@@ -18,8 +18,11 @@
 
 <div class="container">
   <div class="row">
+    <%- include ("./partials/messages"); %>
+    <h3>Your Ratings:</h3>
+    <br>
       <div class="panel panel-default">
-          <div class="panel-heading">CREATE A REVIEW</div>
+          <!-- <div class="panel-heading">CREATE A REVIEW</div>
           <div class="panel-body">
               <p>
                   Use the stars below to rate your specific drink at any location!
@@ -52,8 +55,8 @@
               <div>
                   <button type="submit" class="btn btn-default" id="reviewbutton">Submit</button>
               </div>
-            </div>
-          </div>
+            </div> 
+          </div> -->
           <% if(ratings == 0) { %>
             <p> You have not created any ratings </p>
           <% } else { %>
@@ -80,8 +83,16 @@
                                 <td><%= ratings.coffee_quality %></td>
                                 <td><%= ratings.dairy_free %></td>
                                 <td><%= ratings.favourite_drink %></td>
-                                <td><a>Edit</a></td>
-                                <td><a>Delete</a></td>
+                                <td><a href="/ratings/edit/<%=ratings.id%>">Edit</a></td>
+                                <td>
+                                  <!-- <a href="/ratings/delete/<%=ratings.id%>">Delete</a> -->
+                                  <form action="ratings/<%=ratings.id%>" method="POST" id="delete-form">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit" class="btn btn-default">
+                                      <i class="fas fa-trash"></i>
+                                    </button>
+                                  </form>
+                                </td>
                             </tr>
                         <% }); %>
                     <% } %>
@@ -92,14 +103,14 @@
   </div>
 </div>
 
-<a href="/ratings/add" class="btn btn-secondary"><i class="fas fa-plus"></i>Add New Rating</a><br>
+<a href="/ratings/add" class="btn btn-secondary"><i class="fas fa-plus"></i> Add New Rating</a><br>
 
 <div class="form-group">
-  <div class="col-lg-10">
-    <a href="/logout" class="btn btn-default" id="dashboard-logout">Logout</a>
+  <div class="col-lg-10" id="profile-buttons">
+    <a href="/logout" class="btn btn-primary" id="dashboard-logout">Logout</a>
     <br>
     <br>
-    <p><a href="/home" class="btn btn-default">Back to the Dashboard</a></p> 
+    <p><a href="/home" class="btn btn-default">Back to Home</a></p> 
   </div>
 </div>
 

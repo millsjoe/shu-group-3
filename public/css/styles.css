@@ -1,7 +1,35 @@
 /*NAV BAR*/
 .navbar-default {
-  background-color:grey;
-  border-color: grey;
+  background-color: #D8D8D8;
+  border-color: #D8D8D8;
+  padding-bottom: 10px;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+  font-weight: bolder;
+  color: #434343;
+}
+
+.navbar-brand {
+  padding: 35px;
+}
+
+.navbar-nav > li > a {
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#434343;
+}
+
+.navbar-toggle {
+  margin-top: 20px;
 }
 
 .alert {
@@ -30,69 +58,46 @@
   margin-top: 20px;
 }
 
-
-/*interactive review*/
-.rating_stars {
-  margin-top: 15px;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 200;
-  color: #918f8f;
-  position: relative;
-}
-
-.rating_stars span .fa, .rating_stars span.active-low .fa-star-o, .rating_stars span.active-high .fa-star-o{
-	display: none;
-}
-
-.rating_stars span .fa-star-o{
-	display: inline-block;
-}
-
-.rating_stars span.s.active-high .fa-star{
-	display: inline-block; color: #feb645;
-}
-
-.rating_stars span.s.active-low .fa-star-half-o{
-	display: inline-block; color: #feb645;
-}
-
-.rating_stars span.r {
-	position: absolute;
-	top: 0;
-	height: 20px;
-	width: 10px;
-	left: 0;
-}
-
-.rating_stars span.r.r0_5 {left:0px;}
-.rating_stars span.r.r1 {left:10px; width: 11px;}
-.rating_stars span.r.r1_5 {left:21px; width: 13px;}
-.rating_stars span.r.r2 {left:34px; width: 12px;}
-.rating_stars span.r.r2_5 {left:46px; width: 12px;}
-.rating_stars span.r.r3 {left:58px; width: 11px;}
-.rating_stars span.r.r3_5 {left:69px; width: 12px;}
-.rating_stars span.r.r4 {left:81px; width: 12px;}
-.rating_stars span.r.r4_5 {left:93px; width: 12px;}
-.rating_stars span.r.r5 {left:105px; width: 12px;}
-
 /* INTERACTIVE REVIEW- TO LOOK PRETTY SECTION*/
 html, body {
   /* text-align: center;  */
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
   font-size: 12px;
   /* height: 100%; */
   color: rgb(5, 5, 5);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 } 
 
-
-label {
-  width: 100px;display: inline-block; text-align: right; margin-right: 10px;
+h1 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+  /* font-size: 30px; */
+  font-weight: bold;
+  color: #434343;
 }
 
+h2 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+  /* font-size: 30px; */
+  font-weight: bold;
+  color: #434343;
+}
+
+/* label {
+  width: 100px;display: inline-block; text-align: right; margin-right: 10px;
+} */
+
 input {
-  width: 50px; text-align: center;
+  /* width: 50px;  */
+  text-align: center;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: -20px;
 }
 
 .values {
@@ -194,7 +199,6 @@ ul > li {
 }
 
 .copy {
-  margin: 20px;
   width: 100%;
   display: inline-block;
   text-align: center;
@@ -202,13 +206,13 @@ ul > li {
 }
 
 .footer {
-  position: absolute;
+  margin-top: 40px;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 110px;
   line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  background-color: #F18343;
 }
 
 #footer-icon {
@@ -219,6 +223,7 @@ ul > li {
 #dashboard-logout {
   margin-top: 20px;
 }
+
 
 /** star ratings code by webdevtrick ( https://webdevtrick.com ) **/
 .rating-star {
@@ -255,4 +260,109 @@ ul > li {
 .rating-star input:hover + span.star:before, .rating-star input:hover + span.star ~ span.star:before, .rating-star input:checked + span.star:before, .rating-star input:checked + span.star ~ span.star:before {
     color: #ffd100;
     content:"\f005";
+}
+
+.text-muted {
+  color: #f1f1f1;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.btn-primary:hover {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  color: #fff;
+  filter: brightness(85%);
+}
+
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  color: #fff;
+  filter: brightness(85%);
+}
+
+.btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  color: #fff;
+  filter: brightness(85%);
+}
+
+.jumbotron h1, .jumbotron .h1 {
+color: #434343;
+}
+
+.jumbotron p {
+  padding: 10px 0px;
+  color: #434343;
+  font-weight: 300;
+}
+
+#home-page-list {
+  padding: 10px 0px;
+  font-size: 24px;
+  color: #434343;
+  font-weight: 300;
+}
+
+
+#sm-footer {
+  justify-content: center;
+  position: fixed; 
+  bottom: 0; 
+  background-color: #F18343;
+  width: 100vw; 
+  /* height: 15vh;  */
+  display: flex;
+  font-size: 2rem; 
+  font-family: 'Roboto Slab', sans-serif; 
+  padding-bottom: 10px;
+}
+
+#sm-footer a {
+ color: #fff;
+ padding-left: 20px;
+}
+
+#sm-footer a:hover {
+  filter: brightness(85%);
+}
+
+#instructions p {
+  padding: 10px;
+}
+#instructions h3 {
+font-size: 26px;
+font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+margin-bottom: -20px;
+}
+
+#instructions {
+  margin-bottom: 10px;
+}
+
+#map {
+  margin-bottom: 120px;
+}
+
+.control-label {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 28px;
+  color: #434343;
+}
+
+.input-group .form-control {
+  border-radius: 30px;
+}
+
+#profile-buttons {
+  margin-bottom: 100px;
 }

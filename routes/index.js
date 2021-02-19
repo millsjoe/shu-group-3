@@ -3,7 +3,7 @@ const router = express.Router();
 const googleAPIs = require('../places');
 const bodyParser = require("body-parser");
 const Shop = require('../models/Shops');
-const { ensureAuthenticated } = require('../config/auth');
+const { ensureAuthenticated, isAdmin } = require('../config/auth');
 const Rating = require('../models/Rating')
 
 let max = 5;
@@ -23,9 +23,25 @@ router.get('/home', ensureAuthenticated, async (req, res) => {
         })
     }   catch (err) {
         console.error(err)
-        //need to add error message
+        res.render('error/500')
     }  
 });
+
+//Admin page
+router.get('/admin', isAdmin, async (req, res) => {
+    try {
+        const allRatings = await Rating.find()
+        
+        res.render('admin', {
+            name: req.user.name,
+            allRatings
+        })
+    }   catch (err) {
+        console.error(err)
+        res.render('error/500')
+    }  
+});
+
 
 //Profile (logged in)
 router.get('/profile', ensureAuthenticated, async (req, res) => {
@@ -38,7 +54,7 @@ router.get('/profile', ensureAuthenticated, async (req, res) => {
         })
     }   catch (err) {
         console.error(err)
-        //need to add error message
+        res.render('error/500')
     }  
 });
 
