@@ -1,0 +1,925 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "ATtYBwJQDxDCfiz85KS-oblL3O6I5hWHz22bEiuUgHNLlSKN_zFYLJM99bXRi_yQaysFqp3mcmfdr0hYcCNAFhLYxLqi9zttCL3gXjq3TrhBJuGy9R9Du6hFLLPL_isFXKR7kqc0BXhV7mOakDxhKpw-B-SWwMxhz2d3o20u7s6jOW41vChEpn5GvTiRVkZu9DgKfxHOKSG5XbLknE8GHY025Sfxn4oBwgdGdhqUjlNhT4JWSR0SRD3peIBcU8zoiXScUDoC2mnhvaZVTI2GpmnUS5c7De7zf-mWC2w3a0GS3nR_p-lU1hR00J-21hntA0rM6mwNmLvNsgfojobEjzxG9jRB-Ddrc8WCiWzSANpEN53AZTrz1bSKP9fT7MRastNL-qm0pbG7l65E2LXFvQ5cX1vrFG6lB4I2TRyvx7SP7byOwS89g8eEAAC4c5AB9UBbBAqN",
+   "results" : [
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "603 Huddersfield Rd, Ravensthorpe, Dewsbury WF13 3JR, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6792145,
+               "lng" : -1.6624011
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.68061077989272,
+                  "lng" : -1.661078720107278
+               },
+               "southwest" : {
+                  "lat" : 53.67791112010727,
+                  "lng" : -1.663778379892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Cha Cha Cafe",
+         "place_id" : "ChIJHZGEMnjfe0gR6oEKUmrezlk",
+         "plus_code" : {
+            "compound_code" : "M8HQ+M2 Dewsbury",
+            "global_code" : "9C5WM8HQ+M2"
+         },
+         "rating" : 0,
+         "reference" : "ChIJHZGEMnjfe0gR6oEKUmrezlk",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "14-16 Longcauseway, Dewsbury WF13 1NH, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6912622,
+               "lng" : -1.6281373
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.69261087989272,
+                  "lng" : -1.626602970107278
+               },
+               "southwest" : {
+                  "lat" : 53.68991122010728,
+                  "lng" : -1.629302629892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Costa Coffee Dewsbury",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109551117070906417828\"\u003eHamza Patel\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwJlZS044J2z0ggouruQJ76HQ69Ybn3RmA1KbfSelBWhKX45FYZ7optyWImLjtmsahYvou0yYS9WtPllu4F85zjGfO1nzUmmsYLaj4dgWtUMOc-sCAdgtzvURXl5zQR_lbxz2nxv9-MERhivdEwH5eTDmcwFqtSyQPqYgXqW7vgwmcH_",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJHWxtEDdgeUgRL1p7jBaKR_4",
+         "plus_code" : {
+            "compound_code" : "M9RC+GP Dewsbury",
+            "global_code" : "9C5WM9RC+GP"
+         },
+         "price_level" : 2,
+         "rating" : 4.2,
+         "reference" : "ChIJHWxtEDdgeUgRL1p7jBaKR_4",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 439
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "54 Calder Rd, Mirfield WF14 8NR, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.67051470000001,
+               "lng" : -1.697002
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.67189057989272,
+                  "lng" : -1.695577870107278
+               },
+               "southwest" : {
+                  "lat" : 53.66919092010728,
+                  "lng" : -1.698277529892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Cupushi Coffee",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 640,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110830967161603159820\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwLdQby2jY_xSBm4NFuLXEyDeXOtgi_WojBl3ZTER3_X56g8Rvd2JLQg5ZCkRIzs_FQ0oMoPEB7t-zc7YT5G8XmD7_kOMmiTCBYKK0J7y8CsQ8sT0nk7C4WziTXJSSu8vauTYjIH1u2NQi9ET33j9914OlKyUc5LaQouQvvPcgwCEs6_",
+               "width" : 640
+            }
+         ],
+         "place_id" : "ChIJg_tzzRzfe0gR6WBL2XTBJSw",
+         "plus_code" : {
+            "compound_code" : "M8C3+65 Mirfield",
+            "global_code" : "9C5WM8C3+65"
+         },
+         "rating" : 4.9,
+         "reference" : "ChIJg_tzzRzfe0gR6WBL2XTBJSw",
+         "types" : [
+            "cafe",
+            "bakery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 11
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Havelock St, Ravensthorpe, Dewsbury WF13 3LU, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6770175,
+               "lng" : -1.6657668
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.67841467989272,
+                  "lng" : -1.664297770107278
+               },
+               "southwest" : {
+                  "lat" : 53.67571502010728,
+                  "lng" : -1.666997429892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Chaayé Paani™ Dewsbury",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1080,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108865367973630196440\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwJ_GPOWKXR34rqsMD3ZiX5Vhth5MutoUKOJkKXKAirh_oNgebgkfR6JW9od9Hgd2VVRJemyA5Ev0pa6iVa7yrvSgYlwqq01rDemUIdFV-TrhjhwzJ6uZHOY3X8DiG5jRb83rl5iJHoPyslu4jfbFxQWVY51CernL-qzzbaC7BRl2Gj4",
+               "width" : 1080
+            }
+         ],
+         "place_id" : "ChIJ1QERZ3ffe0gRk3loX2vHm6c",
+         "plus_code" : {
+            "compound_code" : "M8GM+RM Dewsbury",
+            "global_code" : "9C5WM8GM+RM"
+         },
+         "price_level" : 1,
+         "rating" : 4.7,
+         "reference" : "ChIJ1QERZ3ffe0gRk3loX2vHm6c",
+         "types" : [
+            "meal_takeaway",
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 145
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Welcome Break, M62, Huddersfield, Brighouse HD6 4JX, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.7135696,
+               "lng" : -1.7433314
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.71501062989272,
+                  "lng" : -1.742004770107278
+               },
+               "southwest" : {
+                  "lat" : 53.71231097010728,
+                  "lng" : -1.744704429892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+         "name" : "Starbucks Coffee",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3120,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102001379830696011334\"\u003eDavid Acton\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwIsM5y4ke01Z0Jv6aVfkmRMWEgtXx8kdUK5TRpS-bRUk64TYDAra-F0jnVSnW26tdKlUp5_mAGaQVVqOu5-xjPyhXXtwz7dVPyM0l7n2MGcg_VeIFK5FKZRz-Y0T2DqFQwcVHBblCSiBrpViiCFDHwAac5s4DyZUY88p4dzz9tG1Gyy",
+               "width" : 4160
+            }
+         ],
+         "place_id" : "ChIJxVE8qxree0gRQFCPuCInTcA",
+         "plus_code" : {
+            "compound_code" : "P774+CM Brighouse",
+            "global_code" : "9C5WP774+CM"
+         },
+         "price_level" : 2,
+         "rating" : 4,
+         "reference" : "ChIJxVE8qxree0gRQFCPuCInTcA",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 154
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Princess St, Mirfield WF14 8AQ, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6745013,
+               "lng" : -1.6926128
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.67583357989272,
+                  "lng" : -1.691240470107278
+               },
+               "southwest" : {
+                  "lat" : 53.67313392010728,
+                  "lng" : -1.693940129892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Fausto's",
+         "place_id" : "ChIJRbh_RgTfe0gRQn8Qg-3Ozm4",
+         "plus_code" : {
+            "compound_code" : "M8F4+RX Mirfield",
+            "global_code" : "9C5WM8F4+RX"
+         },
+         "rating" : 4.9,
+         "reference" : "ChIJRbh_RgTfe0gRQn8Qg-3Ozm4",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 8
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Croft Farm, Clough Lane, Liversedge WF15 8AD, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.7100236,
+               "lng" : -1.7145453
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.71138967989272,
+                  "lng" : -1.713294870107278
+               },
+               "southwest" : {
+                  "lat" : 53.70869002010727,
+                  "lng" : -1.715994529892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Bennett's Eggs & The Garden Coffee Lounge",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1920,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113244093773808483452\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwLxRyoBBIaJZnRQyJETy4MtZ1ZTQBCgUZIcoDyo_dg7eaXGrOXVv012vIm2tXCywrTjEMT2ef_wip0Sqf1JEePAKHyB2vYBXdIJ9VCTSAa4gJc2pgNIAUMKbwct8ulxaP81atpXIGCwPmZxXKHe4vGoP1j0gpiVY0v4xT9WVMqOW99w",
+               "width" : 998
+            }
+         ],
+         "place_id" : "ChIJ370B-jDee0gRBVJdKI2TNjU",
+         "plus_code" : {
+            "compound_code" : "P76P+25 Liversedge",
+            "global_code" : "9C5WP76P+25"
+         },
+         "price_level" : 2,
+         "rating" : 4.6,
+         "reference" : "ChIJ370B-jDee0gRBVJdKI2TNjU",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 185
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1 Green Ln, Dewsbury WF13 4DH, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6983806,
+               "lng" : -1.6523222
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.69970097989272,
+                  "lng" : -1.650969370107278
+               },
+               "southwest" : {
+                  "lat" : 53.69700132010728,
+                  "lng" : -1.653669029892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Pie Shed",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4032,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110843552019710696908\"\u003eWayne Whiting\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwLGkBCyg-cM8eIukgja-3Khk4Vyp3RwN6TTbuKiIsG4OJ2lsXjJ-agYvDjWvGZjsmEs9JpxDhOv1RROWmAjyn8NgMyf9aZqGKd2jGMXMH3zawTGI1PA9-r69sw6pXWBJjRyi9AN77T7pLLEmJdMVhpnxz-LxV3R5zVkDdsmafuhztc4",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJP74y9Ynfe0gR1rvfUZd6-4Y",
+         "plus_code" : {
+            "compound_code" : "M8XX+93 Dewsbury",
+            "global_code" : "9C5WM8XX+93"
+         },
+         "price_level" : 1,
+         "rating" : 4.5,
+         "reference" : "ChIJP74y9Ynfe0gR1rvfUZd6-4Y",
+         "types" : [
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 284
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "5 King St, Huddersfield HD1 2QD, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6459374,
+               "lng" : -1.78218
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.64755832989272,
+                  "lng" : -1.780878370107278
+               },
+               "southwest" : {
+                  "lat" : 53.64485867010728,
+                  "lng" : -1.783578029892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Choosy's Tea and Coffee House",
+         "opening_hours" : {},
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108493083122964774634\"\u003eChoosy&#39;s Tea and Coffee House\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwIc-JWsV-tgsTWRwLzkapQpvvrMJ2krr6McqDcmkfsPTJtL0c365aEoATYXz0b5PZU2FaO6nRDXX9KIHAZnFu_WROUE8RQJRujKGVABwvZL_C17weuB3woT-2tc1qzDw2ixixjDkypTIBn7WWpOkAvuTzwodsOlFombPq71uS7V9Mgl",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJrccuW3Lce0gRS5Wit4jN4c0",
+         "plus_code" : {
+            "compound_code" : "J6W9+94 Huddersfield",
+            "global_code" : "9C5WJ6W9+94"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJrccuW3Lce0gRS5Wit4jN4c0",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 104
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "53 Huddersfield Rd, Mirfield WF14 8AB, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.673906,
+               "lng" : -1.692159
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.67532597989272,
+                  "lng" : -1.690820420107278
+               },
+               "southwest" : {
+                  "lat" : 53.67262632010727,
+                  "lng" : -1.693520079892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Cafe53 Mirfield",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1136,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109065101155196889599\"\u003eCafee On The Vale\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwLYiVOsdVK_YqDdvOX8MVRxAJu7fQf3Lc6Jna6XJCfKfKHwBR8bQ3Udl2fAPW-BYPq53RTIa5XpLznasqN4zq0JN4GBQ1_h6ufk6LRzPSdXh4M6EYtlDdTra3_4Q5W38HUkjA-zb0K48KMksYF2t1RhVv-EXr5N2BqwWIP6pPaOy1YT",
+               "width" : 640
+            }
+         ],
+         "place_id" : "ChIJB58CUQTfe0gROGyovZWWolk",
+         "plus_code" : {
+            "compound_code" : "M8F5+H4 Mirfield",
+            "global_code" : "9C5WM8F5+H4"
+         },
+         "price_level" : 1,
+         "rating" : 4.3,
+         "reference" : "ChIJB58CUQTfe0gROGyovZWWolk",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 173
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Unit 8 Ravensthorpe Shopping Centre, Dewsbury WF13 3JR, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6800052,
+               "lng" : -1.662684
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.68149772989273,
+                  "lng" : -1.661531570107278
+               },
+               "southwest" : {
+                  "lat" : 53.67879807010728,
+                  "lng" : -1.664231229892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "name" : "Greggs",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2048,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108844577473182009975\"\u003eJames Oldroyd\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwI8BOb0pIaMsCjKEe73P41LULL_MOAs7MO-52nWHeTEV1S1f4-CeuvyIU3BgIc5sxzeMUqje5W8tJmXrcPPPsaVPy4QAhIpuHD_E6fpvpD-9aTYx3FrRQ53_n29wy7-tUtCZ2BmHW5FpI7HsaIS6rjUNDAJaGgWP3tR9IN8Ubh1dRfI",
+               "width" : 1536
+            }
+         ],
+         "place_id" : "ChIJC1jHMovfe0gR4cbRDODIcao",
+         "plus_code" : {
+            "compound_code" : "M8JP+2W Dewsbury",
+            "global_code" : "9C5WM8JP+2W"
+         },
+         "price_level" : 1,
+         "rating" : 4.2,
+         "reference" : "ChIJC1jHMovfe0gR4cbRDODIcao",
+         "types" : [
+            "bakery",
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 143
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "35 Clough Ln, Liversedge WF15 8AD, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.7099679,
+               "lng" : -1.7145139
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.71135237989272,
+                  "lng" : -1.713283570107278
+               },
+               "southwest" : {
+                  "lat" : 53.70865272010727,
+                  "lng" : -1.715983229892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Garden Coffee Lounge",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 800,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/105908580794008624325\"\u003eStuart Massey\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwIZVlG3dU7OM7mqjFPOT8eeOtZurru5EXv5951KAyML-Y9l4wFOMTW8IeYSWxW_ou0JHBjMef2cGNHz-KwXtkwCI7POwEROJvU_5GJ1pp2JIm_YAyOfOxUT2rDC-Ien1v3ex51YG5dY0SUE9W7xCH1L6aVCHz4jGrvKU3rl9L2XBu4",
+               "width" : 992
+            }
+         ],
+         "place_id" : "ChIJ6-ZSMjfee0gR-qsdkdGxe9k",
+         "plus_code" : {
+            "compound_code" : "P75P+X5 Liversedge",
+            "global_code" : "9C5WP75P+X5"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJ6-ZSMjfee0gR-qsdkdGxe9k",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 117
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "17 Cross Crown St, Cleckheaton BD19 3HW, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.7241565,
+               "lng" : -1.7144584
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.72550632989273,
+                  "lng" : -1.713108570107278
+               },
+               "southwest" : {
+                  "lat" : 53.72280667010729,
+                  "lng" : -1.715808229892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Blend Cafe Bar",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2268,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106165431146098005814\"\u003eMartin Pearson\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwLCYku0bjsBffxdIpgsmnrN0HaIjN9-E6GLfRhZd5CKC2QiuntJA-_3vpOBgbljmO96vpRc09LyI40iXAmuN8orMCaBN-QNRDWLN6ooWMXBS_aboGXZ01qwKIV1O32pWqgcbZIwoxMMtL6lTwAcxFnLMWEI4ePzf9Kfr73oDFrtHyU0",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJv1UaLSjee0gRLfmyg4_tlfc",
+         "plus_code" : {
+            "compound_code" : "P7FP+M6 Cleckheaton",
+            "global_code" : "9C5WP7FP+M6"
+         },
+         "price_level" : 2,
+         "rating" : 4.6,
+         "reference" : "ChIJv1UaLSjee0gRLfmyg4_tlfc",
+         "types" : [ "cafe", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 146
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "2 Pack Horse Walk, Huddersfield HD1 2RT, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.64601829999999,
+               "lng" : -1.7810519
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.64736837989273,
+                  "lng" : -1.779702220107278
+               },
+               "southwest" : {
+                  "lat" : 53.64466872010728,
+                  "lng" : -1.782401879892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Merrie England Coffee Shop Ltd",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 6000,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100654944163610585875\"\u003eDarren Spivey\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwJjD4CviIknS9KrlW7OheGOtkdIoP3L9KjuwOGykFgcnK64iHJTQ9dcjqwFKCpZZHRlOW8Tbw6Yju-ffdH5JSSZmv5NfeYAYUHPSoFYEoPBEd2Ejl-0efJNmuwJqwDxr6EZdHAAOxG37ul1P-mkRyj9bTQZThyBp53ZXxH2syt4oM0B",
+               "width" : 8000
+            }
+         ],
+         "place_id" : "ChIJXfZxYnLce0gRxbR72FJVFtU",
+         "plus_code" : {
+            "compound_code" : "J6W9+CH Huddersfield",
+            "global_code" : "9C5WJ6W9+CH"
+         },
+         "rating" : 4.3,
+         "reference" : "ChIJXfZxYnLce0gRxbR72FJVFtU",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 46
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Wheatley park, Mirfield WF14 8HE, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6639942,
+               "lng" : -1.6807915
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.66534307989272,
+                  "lng" : -1.679191470107278
+               },
+               "southwest" : {
+                  "lat" : 53.66264342010727,
+                  "lng" : -1.681891129892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Primals pantry",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1080,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/105724066556153696637\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwLLSHudoWZOdgpUcdXp2XImV2kfMO7N9iiW5u1IzF_iT89HnwIAif6Kga5kWX4nG5gTnsJzufzUpSAUJDdP14URWDL7N-NVIQzToclDNZqHZu-wdYcYYsGl8MeiteWRukhtymRc5qgaDMSEDKdVXZWxJkHRVzWV4xmJ1Uu-pjropb8o",
+               "width" : 1440
+            }
+         ],
+         "place_id" : "ChIJBSwj-43fe0gRK2zD8SbikL8",
+         "plus_code" : {
+            "compound_code" : "M879+HM Mirfield",
+            "global_code" : "9C5WM879+HM"
+         },
+         "rating" : 0,
+         "reference" : "ChIJBSwj-43fe0gRK2zD8SbikL8",
+         "types" : [
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 0
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Huddersfield Rd, Liversedge WF15 7QQ, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6977354,
+               "lng" : -1.6985131
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.69895852989273,
+                  "lng" : -1.696806520107278
+               },
+               "southwest" : {
+                  "lat" : 53.69625887010728,
+                  "lng" : -1.699506179892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "name" : "Greggs",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109260174631753688105\"\u003eZubair Hussain\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwL8DBRxioWIW1ALbEie-wP31NjGRqyf_74Qn7DIXqpKZSrMlrf8PFKDvnGSj8biprfXtSvgW2mPkYoSk9tzwan9zoPYoOEWhw1GGdPkAXZSDpkAjx5Yx-FKsEPFB2jlrTwFyCA7gT4rxHD6NfukGwJIojWDr63Wb9w8HNljeHZsPiTg",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJ1amyjrPfe0gRQNdCPhyVX10",
+         "plus_code" : {
+            "compound_code" : "M8X2+3H Liversedge",
+            "global_code" : "9C5WM8X2+3H"
+         },
+         "price_level" : 1,
+         "rating" : 4.2,
+         "reference" : "ChIJ1amyjrPfe0gRQNdCPhyVX10",
+         "types" : [
+            "bakery",
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 181
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "192 Huddersfield Rd, Mirfield WF14 8AT, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6742583,
+               "lng" : -1.6958299
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.67558342989272,
+                  "lng" : -1.694518920107278
+               },
+               "southwest" : {
+                  "lat" : 53.67288377010728,
+                  "lng" : -1.697218579892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Ravello Cafe and Delicatessen",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2992,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/107559814948040098251\"\u003eLesley Law\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwK501vh8kldxOpFw3Qwmhe5jb_xAWmcCBlWe1J8Mo8JVfWkjGu87v_5C3KJxgumUcFxo5WKl9-mSAHm4quIJm4RRA07Rt7JzS00sMkB4rCxT5LWwutJmTGOvYTUgENFun-h28jzj_DEchFGn5z1FMrXoNyw28-VXmiVIAP03Qwbtyd1",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJWQJSkAPfe0gRc9KpYwwA1P4",
+         "plus_code" : {
+            "compound_code" : "M8F3+PM Mirfield",
+            "global_code" : "9C5WM8F3+PM"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJWQJSkAPfe0gRc9KpYwwA1P4",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 143
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "178 Westerton Rd, Tingley, Wakefield WF3 1AE, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.7241667,
+               "lng" : -1.5675
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.72542412989273,
+                  "lng" : -1.566164470107278
+               },
+               "southwest" : {
+                  "lat" : 53.72272447010729,
+                  "lng" : -1.568864129892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Beans",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3000,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116666531384598880708\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwKluIxsTX6FhWJC8inugtTgD4f1O94iRhTQNZ-ibQvuYw4PukbzW8HMHhI826jSwxBHzi8NxGcLp00lJ1W3phUbC_0noQOW3n9NH-TcFa7kCNb8DXDlpZnXx084S15paNIh2okdpGJmZ7kqR7deb-vN1VzVW5z4qGZo-5zXrgqUicCr",
+               "width" : 4000
+            }
+         ],
+         "place_id" : "ChIJ2VeD_aBgeUgRWsKggtsMj98",
+         "plus_code" : {
+            "compound_code" : "PCFM+M2 Wakefield",
+            "global_code" : "9C5WPCFM+M2"
+         },
+         "price_level" : 1,
+         "rating" : 4.6,
+         "reference" : "ChIJ2VeD_aBgeUgRWsKggtsMj98",
+         "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+         "user_ratings_total" : 94
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "132 Huddersfield Rd, Mirfield WF14 8XS, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6740887,
+               "lng" : -1.6930543
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.67544477989272,
+                  "lng" : -1.691625870107278
+               },
+               "southwest" : {
+                  "lat" : 53.67274512010728,
+                  "lng" : -1.694325529892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "name" : "Babyccinos",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1013,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100717454663883396615\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwL0iFx13Syu4NOKJyA2tdQWHnp31PCeoZyZHC2c1WwuTp6S_nEKoxAQUdmRUnNcHaKLXqkuFFiizqzye_YobT6ZsKObwqD643ZDPyrCxu9NrLjvspI_5bA0XeSMbTgdgZuCIoCWV3g6CZoSg0SxrNRFzK03zP5XyPIfdjlZmDDE3QHx",
+               "width" : 1060
+            }
+         ],
+         "place_id" : "ChIJHY7p0h7fe0gRtFE6e3M15vA",
+         "plus_code" : {
+            "compound_code" : "M8F4+JQ Mirfield",
+            "global_code" : "9C5WM8F4+JQ"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJHY7p0h7fe0gRtFE6e3M15vA",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 72
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "2 Foundry St, Dewsbury WF13 1QH, United Kingdom",
+         "geometry" : {
+            "location" : {
+               "lat" : 53.6921794,
+               "lng" : -1.6282537
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.69375007989272,
+                  "lng" : -1.626864470107278
+               },
+               "southwest" : {
+                  "lat" : 53.69105042010728,
+                  "lng" : -1.629564129892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "name" : "Greggs",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/107558470959804906506\"\u003eStefan Pawliw\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATtYBwJ1TNXQ2E2SmiuFDKGVyEcRsX-TahZg0h50_4jQqY3Gsz_U7KisnshaFuvwnlKg0e81KtfQQrD11SsrAYAYOVA0HvPP4iJ_t2xFUDIjuFNTMQ5rvvNb2O7mWQ6zWnqMhIR6twUr9dOt6PM_6wVr-BAY9pyXHzUvuz9VDSUJp-5YWl-D",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJOccPbDdgeUgROP_hJl78lP4",
+         "plus_code" : {
+            "compound_code" : "M9RC+VM Dewsbury",
+            "global_code" : "9C5WM9RC+VM"
+         },
+         "price_level" : 1,
+         "rating" : 4.1,
+         "reference" : "ChIJOccPbDdgeUgROP_hJl78lP4",
+         "types" : [
+            "bakery",
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 57
+      }
+   ],
+   "status" : "OK"
+}

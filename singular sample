@@ -1,0 +1,50 @@
+{
+    "html_attributions" : [],
+    "next_page_token" : "ATtYBwJQDxDCfiz85KS-oblL3O6I5hWHz22bEiuUgHNLlSKN_zFYLJM99bXRi_yQaysFqp3mcmfdr0hYcCNAFhLYxLqi9zttCL3gXjq3TrhBJuGy9R9Du6hFLLPL_isFXKR7kqc0BXhV7mOakDxhKpw-B-SWwMxhz2d3o20u7s6jOW41vChEpn5GvTiRVkZu9DgKfxHOKSG5XbLknE8GHY025Sfxn4oBwgdGdhqUjlNhT4JWSR0SRD3peIBcU8zoiXScUDoC2mnhvaZVTI2GpmnUS5c7De7zf-mWC2w3a0GS3nR_p-lU1hR00J-21hntA0rM6mwNmLvNsgfojobEjzxG9jRB-Ddrc8WCiWzSANpEN53AZTrz1bSKP9fT7MRastNL-qm0pbG7l65E2LXFvQ5cX1vrFG6lB4I2TRyvx7SP7byOwS89g8eEAAC4c5AB9UBbBAqN",
+    "results" : [
+        {
+            "business_status" : "OPERATIONAL",
+            "formatted_address" : "14-16 Longcauseway, Dewsbury WF13 1NH, United Kingdom",
+            "geometry" : {
+                "location" : {
+                    "lat" : 53.6912622,
+                    "lng" : -1.6281373
+                },
+                "viewport" : {
+                    "northeast" : {
+                    "lat" : 53.69261087989272,
+                    "lng" : -1.626602970107278
+                    },
+                    "southwest" : {
+                    "lat" : 53.68991122010728,
+                    "lng" : -1.629302629892722
+                    }
+                }
+            },
+            "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+            "name" : "Costa Coffee Dewsbury",
+            "opening_hours" : {
+                "open_now" : true
+            },
+            "photos" : [
+                {
+                    "height" : 3024,
+                    "html_attributions" : [
+                    "\u003ca href=\"https://maps.google.com/maps/contrib/109551117070906417828\"\u003eHamza Patel\u003c/a\u003e"
+                    ],
+                    "photo_reference" : "ATtYBwJlZS044J2z0ggouruQJ76HQ69Ybn3RmA1KbfSelBWhKX45FYZ7optyWImLjtmsahYvou0yYS9WtPllu4F85zjGfO1nzUmmsYLaj4dgWtUMOc-sCAdgtzvURXl5zQR_lbxz2nxv9-MERhivdEwH5eTDmcwFqtSyQPqYgXqW7vgwmcH_",
+                    "width" : 4032
+                }
+            ],
+            "place_id" : "ChIJHWxtEDdgeUgRL1p7jBaKR_4",
+            "plus_code" : {
+                "compound_code" : "M9RC+GP Dewsbury",
+                "global_code" : "9C5WM9RC+GP"
+            },
+            "price_level" : 2,
+            "rating" : 4.2,
+            "reference" : "ChIJHWxtEDdgeUgRL1p7jBaKR_4",
+            "types" : [ "cafe", "food", "point_of_interest", "store", "establishment" ],
+        }
+    ]
+}
