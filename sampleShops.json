@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ChIJG0uyPQTge0gRMNE5w9oIWEY",
+    "name": "CAFE @ NUMBER ONE",
+    "address": "Market St, Birstall, Batley WF17 9EN",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwJjtnRrnNEjQQQWb0rlV_i_JpUonkdLsJIK2RLaR2xjA_WLZEpWCOhMzNNJYgJIozKer9-ONSeqjouRQs3IJzTagSq_i_tnkCyc1vf72_IONbzcp95U1Ui1fO93xu7KXoGLK2CaW8uMOsZ3k5zLCdinAa5kHj-dfr2HUzkhSZV3pSTD&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.731753,
+    "lng": -1.660966,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJg_tzzRzfe0gR6WBL2XTBJSw",
+    "name": "Cupushi Coffee",
+    "address": "54 Calder Rd, Mirfield WF14 8NR",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwLJ89g-3emWYRClNMkmGVhPQkjvDErJmp2WiYOjr4tBN4Zqx7Dx-Io7_NR-L7YpZP-eDSyyOMTUyIOuXC3txYepskskq4XbLlYi0KhucmPbqWXnBMiaYPrEoqzMvCM4HN56sxYdurwvAbNdApsAUWjJPeC7f1oF-r_tbeiGgozvmtcz&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.67051470000001,
+    "lng": -1.697002,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJi-HcdYLge0gRwaEbe5en1qE",
+    "name": "The Fat Magpie Cafe & Coffee Shop",
+    "address": "BD19, 25 Albion St, Cleckheaton BD19 3JD",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maight=500&photoreference=ATtYBwJrJz1sfoYe8WJ_soqRfkC6cyaU8YEREs3XeIXIK72NG85tFt5ZvUlbHvDf0M7KtH30aHWcg3i06wlrwoM9kEbqqLT-fvs80lYC5RTPL_ct9Z6VbCUGax9uF1zvZYlcsv-4KAm1LhNud7YpTB3C9veTeYfNU7UEiDiYcnK2BfOYnGML&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7247838,
+    "lng": -1.7130965,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJBQw33R9geUgRvwSFQz67Zv8",
+    "name": "Oasis Sandwich & Coffee Bar",
+    "address": "64 Halifax Rd, Staincliffe, Batley WF17 7BA",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwLQvsJLXWvRM3v_5a7Lvt3ELm-K93ayo7gT4wn8M1q1XFtmxq_NvSi_V7UJKFJvUa0pcggfEqTiRt9XHeMzLgg-qL3qY-DFIlrNGkondnIrl92HMk-eGY-phR9BdbtugirWOWJVeQ7I9fQVHTmYqOVAkrEU-1DD69JTuMRimmCakCQW&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7054075,
+    "lng": -1.6504065,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJkTTjMC3fe0gRu3U2TbWp8NU",
+    "name": "Millers Coffee House",
+    "address": "3 Market St, Cleckheaton BD19 3RT",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwJIBL80VBc45ZbTgMHGQMGde-q5pdtCOe0-cw78xyIQAekY4Y-ca6xWC7Nc0Fp2WI1UlxwP3-eUDhfqOoQ6dM4R9lGKOL6vcdkeWL2GG3QYvUlZu1lrr9vinz7iDpsZIEKSCBQ5Gr6HrNnFuBnpbfyC3N_L9Oz3J4aMoQ5LGswSratH&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7237699,
+    "lng": -1.7125278,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJHZGEMnjfe0gR6oEKUmrezlk",
+    "name": "Cha Cha Cafe",
+    "address": "603 Huddersfield Rd, Ravensthorpe, Dewsbury WF13 3JR",
+    "imageURL": "https://www.pngonly.com/wp-content/uploads/2017/05/Coffee-Clipart-PNG-Image-01.png",
+    "lat": 53.6792145,
+    "lng": -1.6624011,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJ05yMaRxheUgRf0E6kEFZOCc",
+    "name": "Eller.Coffee",
+    "address": "14 Station Rd, Ossett WF5 8AD",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwIS7Spk3aqj5jod2j-sPlvp2J58QCqX14ttrAYoZ_8Hm7uSD_T23zb8tJU8i64M1wbfkdcbi1zXGaG1LjOX8nu9G-AyQxpAfWxIwjEzwJXQh49QtqTk78xhRj_SNzgcnO0hZM-AOrz4xy0EId9KO9jimFwPz9yfO9b4ppfgksPoTMYY&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.67889,
+    "lng": -1.579291,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJJeMkeILge0gRxNgXYOaf24s",
+    "name": "The Taste Cafe Bar",
+    "address": "30-32 Northgate, Cleckheaton BD19 5AE",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwLYstKGabVALP1nsrK816Z0f2gKnk2XUFi8_mZT9IO61B9nSfVqzB6QEWSA7wxvKgd2fnVrOF6Lm8hT9Ib6-e7DIo3tiEaKDqoFHRSdE0oW62vJmlF2kenf6dY-tSwDy9kBMK8yB90JDtVcao9oW7e4bUsIchwSDpDey65r9RGNWgQD&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7247678,
+    "lng": -1.7135266,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJxaTvS-rfe0gRwCrjOPC15S4",
+    "name": "Cafe 54 Heckmondwike",
+    "address": "54 Market Pl, Heckmondwike WF16 0HX",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwKPLJXBzprbvvv2uO4VUwWooIGr2z1hfF5FwKBudHptldHgpXweV6hrUlAGGmEsTkQbbiXSewgy7gcATdUlR3t7pqQrX3LqHYbAYBDlGzapxuYQGKWKl_-Q5yxVMb_u1lXvKn9Rx1erWMmITIpjCfUVKUa4r78SOTjqDGyywTPTIqTa&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7071912,
+    "lng": -1.674075,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJv1UaLSjee0gRLfmyg4_tlfc",
+    "name": "Blend Cafe Bar",
+    "address": "17 Cross Crown St, Cleckheaton BD19 3HW",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwK-1a9F-8uJ475unhKTrzBMMfiEUG12Wjn_pKxsOxU-lnkVLxm1v-AaMK_20AKbRi6r5nS5dKWqumdI4QHynFUXMT_xEmLogd4RkrT7LjHR7tXsGIxEm838xs0aSaVnC4PW5uXG_3-ukB9YPXSRnFxlCMwGJvvai2YF-OIgawVO4FjS&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7241565,
+    "lng": -1.7144584,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJ6-ZSMjfee0gR-qsdkdGxe9k",
+    "name": "Garden Coffee Lounge",
+    "address": "35 Clough Ln, Liversedge WF15 8AD",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwJEEmPCdQ6aOIaWaZGmsI_ByJfLHW1KZt1jd_fTYeZN_WSKn6IQ7_7bxm6DsLZ9V-W7lYJ_pNW0tB_gBvBpX3KOi1juTkDkhHJ-DEf7zSTOdk_R7zWjotvHxWy8S96K70UXPcCy7S5WUuA5c2qTCKImXzQZMhWbfXWCa0DGWAoCaZ7y&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7099679,
+    "lng": -1.7145139,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJ8zRRdfbde0gRGj8Ym10bcRA",
+    "name": "Tiny's Coffee & Sandwich Bar",
+    "address": "633, 633a Bradford Rd, Bailiff Bridge, Brighouse HD6 4DN",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwIxRADldVqNV-wA4TxrGPsBaV_qCUwUP6PeNlsav4hSZr5gme_9tJdGWxFtSU19sV1lAk9EqqUEC322BNN6ozcw7vL7MKU5PZrgA2i8q6x2PBAuPoWpc2gek6zMAbrche30y-73PLl5Mjv7RkF3drkDA7ae0M-az6dex_BmbAoWyhd3&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7223933,
+    "lng": -1.7766214,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJ6dXJxUXhe0gRbI_KeMxKS54",
+    "name": "Cafe V",
+    "address": "15A Nelson St, Birstall, Batley WF17 9ER",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwK6l5tZsOfi9OPs8iHMe1Vpu95j6PXK9ihYVFxRnOf9zbWw_1NfShAJkMuWEFDcF8aN5ziSt1yGxQ9KGKWFWx30tMgom7LV_VN-u9c7iDzJfB28OE5gk_5U0p2eMs9R28HRGIG-rMPRL_rO7tIzlIg-ULeQssSYiYFp-afPb8vp45qB&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.73193389999999,
+    "lng": -1.659065,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJcxbSgnfce0gR_EthSgMgrIU",
+    "name": "Centre Coffee House",
+    "address": "Cathedral House, St Thomas' Rd, Huddersfield HD1 3LG",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwJRSQSMRrJCt1-71qXihp4p5wPUrqnALqNBxYat-rTbzNYnNU4mM4179FKSUUrvCCGKm2U9MqIZCzk3NsO_gUvGs6OzYLJL5QoTz7mqs_yD9p4whtaBF_aUtpp0DbZqixNN3Tay606CoBZYBE919ZkZmg8uoSv6oStT8eDCgElep5qP&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.6392951,
+    "lng": -1.7907683,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJQ9rEj-rde0gRgf9BZFK-oaU",
+    "name": "The Hatch",
+    "address": "39 Ganny Rd, Brighouse HD6 1DA",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwLvf2Ux3jBsdU242ur9PU7UtLYr7_IPSuR3AqBY6Fk-Iv4sNr1MM05FP5wCh5sJJh2CXxDNBAn2A_PGCI65sjZPlX6xFqhHOuaCHbkWmiryBteOKnXvJ1jSkq7SzZ6ZJPrGwlF7TaajLliTZ-IAKqYljyXzEUKq1vAFJpsvd5qp5zB9&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.702834,
+    "lng": -1.7794995,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJ-23q5btceUgRQ_DVrJMX2jM",
+    "name": "The Coffee Shop",
+    "address": "80 Chapel St, Halton, Leeds LS15 7RG",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwLiRMcYRGPvEWszeeFVAO_riOHk4MXDQ4TazSbtKHCCi_NfPPuiNx-cH16eha5-hwFj0hXOAIKc6izr3iaWQsZToDaWKJUR8-YgeeG44xe3b_3O0wTYxNEd6m8b4USsaGYUyBPb88a4TqWz5YnYAfvc4X-8clHcda4Kfrx6Id4yTxmi&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.799119,
+    "lng": -1.4651845,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJizQWqevde0gRF5LejlAv580",
+    "name": "The Little Coffee House",
+    "address": "85-87 Bradford Rd, Brighouse HD6 4AD",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwIj5gIjniym5Bp5I4jSfT0vrrzZHLqZPs5Wl6HmU1TV3SrgS_Ok15a8vaE_fEnuM-2iN36-rjykktIvBlZW1YA97-uNck7NWfMqZN1ZabOB-FEkiY9SW61Ly7jisoaVNICc5wgQW89T6d7WtzHf_Vg9mVDudGMRjxP4MH89vgmhkQaC&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7052206,
+    "lng": -1.7784796,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJueOWkP9meUgRpxHNnPJjxLw",
+    "name": "Al's Tea & Coffee Shop",
+    "address": "61 Kirkgate, Wakefield WF1 1HX",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwK7O0lg1TF3B6dTTIqNDf9nsmsunksYELI3YbDgJYm3BmbWQV4-hqWsWHEJhYF8YcD8Nm18CZ8N_nv7O0kLKNrUpCl78G2QlLQMwvAMuHjCh2A6V06J6omHVwTfKY_gwyzeeLewvsEONGQkkAcNZVOPH2iFoUplHlTDxBgn5f7s2E5o&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.682288,
+    "lng": -1.493737,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJKR5oXSdgeUgRJaj9UhEcBPo",
+    "name": "Butty boys Sandwich & Coffee Hut",
+    "address": "Brunswick St, Dewsbury WF13 4ND",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwLR65eqJLSaUaxmbRznW1dYF1aeBMNX7g1XoN_1HYHCcQPdlkLWnjyf23-hipGf3NqGaWCblo-FwVebjyrWvmJ499V1FuXsbK6vclCuh-u5x6I4EcNERzkKEQ5TC-oUmD6X__-z4lh2EtNgX6vUlqNGEwBLlf6y7jdlPdRe2KGsVxVd&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.6974928,
+    "lng": -1.6498762,
+    "postcodes": ["WF140QZ"]
+  },
+  {
+    "id": "ChIJ9ywDCcDde0gR-5-MuaIEEbk",
+    "name": "No 43 Coffee House.",
+    "address": "43 Bethel St, Brighouse HD6 1JX",
+    "imageURL": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&maxheight=500&photoreference=ATtYBwLfKeMIAmnHFzeqgE2mJzswo8D7xxiXFpMAco--_pSCrmRgGTJ3Bk7gHFNylKzzpenSaVZnKObZBdwSz3fd0Gmrf0hjmHMJ31fWhfjzy-ZnvYhveUwsHD38EPCKFgq51UcZEIc74jt3hMwq1ioS3qyf7IwA2nGVHhWh3ZVCYJEG2xGA&key=AIzaSyBJFVNTYNGzjI4nayUMxq6DcW66eCpB1rU",
+    "lat": 53.7011434,
+    "lng": -1.7815436,
+    "postcodes": ["WF140QZ"]
+  }
+]
