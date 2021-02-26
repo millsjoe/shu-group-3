@@ -113,19 +113,48 @@ router.post('/shops', (req, res) => {
     res.render('shops', {shops: shopsToReturn});
 });
 
-router.get('/shops/:id', (req,res) => {
+router.get('/shops/:id', async (req,res) => {
+
+    try {
+
     const id = req.params.id;
-    Shop.findOne({id : id}).then(shopInfo => {
-        console.log(shopInfo.name);
+        const shopInfo = await Shop.findOne({id : id});
+        const coffeeRatings = await Rating.find({coffee_shop : id });
+        
         const formattedName = shopInfo.name.replace("&","and");
-        res.render('shopInfo',
+        let overallRating = 0;
+        let atmosphereRating = 0;
+        let qualityRating = 0;
+        let dairyFreeRating = 0;
+    
+
+        coffeeRatings.forEach(coffeeRating => {
+            overallRating += coffeeRating.overall;
+            atmosphereRating += coffeeRating.atmosphere;
+            qualityRating += coffeeRating.coffee_quality;
+            dairyFreeRating += coffeeRating.dairy_free;
+        });
+
+        overallRating = overallRating/coffeeRatings.length;
+        atmosphereRating = atmosphereRating/coffeeRatings.length;
+        qualityRating = qualityRating/coffeeRatings.length;
+        dairyFreeRating = dairyFreeRating/coffeeRatings.length;
+
+        return res.render('shopInfo', 
         {
-            name : shopInfo.name,
-            formattedName : formattedName,
-            address : shopInfo.address,
-            img : shopInfo.imageURL,
-            lat : shopInfo.lat,
-            lng : shopInfo.lng
+            shopInfo, 
+            formattedName, 
+            overallRating, 
+            atmosphereRating,
+            qualityRating,
+            dairyFreeRating
+        });
+    
+    } catch (err) {
+        console.error(err);
+        return res.render('error/500');
+    }
+});
         });
     })
 })
