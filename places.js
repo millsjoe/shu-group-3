@@ -1,7 +1,10 @@
 const request = require("request");
 const syncRequest = require("sync-request");
 const { get } = require("https");
-let api = 'AIzaSyDlYQl1Z4hOssnQSXRaRxXDmwM-6WqWsb8'; //INSERT API HERE (MESSAGE JOE)
+const fs = require("fs");
+const { stringify } = require("querystring");
+
+const api = fs.readFileSync('api', 'utf-8'); //INSERT API HERE (MESSAGE JOE)
 
 // Convert postcode to lat + long
 function postCodeToLatLong(postcode) {
@@ -19,6 +22,7 @@ function getCoffeeShops(postcode) {
     const info = postCodeToLatLong(postcode);
     const lat = info.lat;
     const long = info.long;
+    console.log(api);
     const res = syncRequest('GET',`https://maps.googleapis.com/maps/api/place/textsearch/json?query=coffee+shop&location=${lat},${long}&radius=5&type=cafe&key=${api}`);
     const data = JSON.parse(res.getBody());
 
