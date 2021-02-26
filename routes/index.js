@@ -155,9 +155,6 @@ router.get('/shops/:id', async (req,res) => {
         return res.render('error/500');
     }
 });
-        });
-    })
-})
 
 
 module.exports = router;
