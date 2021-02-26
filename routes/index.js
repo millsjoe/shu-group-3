@@ -156,6 +156,12 @@ router.get('/shops/:id', async (req,res) => {
     }
 });
 
+router.get('/shops/:id/rate', ensureAuthenticated, async (req, res) => {
+    const placeID = req.params.id;
+    const shopInfo = await Shop.findOne({id : placeID});
+
+    res.render('ratings/add', {name : req.user.name, placeID, shopInfo});
+});
 
 module.exports = router;
 
