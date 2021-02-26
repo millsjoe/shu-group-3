@@ -77,7 +77,7 @@
                     <% if(ratings) { %>
                         <% ratings.forEach(function(ratings) { %>
                             <tr>
-                                <td><%= ratings.coffee_shop %></td>
+                                <td><a href="/shops/<%= ratings.coffee_id %>"><%= ratings.coffee_shop %></a></td>
                                 <td><%= ratings.overall %></td>
                                 <td><%= ratings.atmosphere %></td>
                                 <td><%= ratings.coffee_quality %></td>

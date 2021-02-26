@@ -126,7 +126,7 @@ router.get('/shops/:id', async (req,res) => {
         let atmosphereRating = 0;
         let qualityRating = 0;
         let dairyFreeRating = 0;
-    
+        const numRatings = coffeeRatings.length;
 
         coffeeRatings.forEach(coffeeRating => {
             overallRating += coffeeRating.overall;
@@ -147,7 +147,8 @@ router.get('/shops/:id', async (req,res) => {
             overallRating, 
             atmosphereRating,
             qualityRating,
-            dairyFreeRating
+            dairyFreeRating,
+            numRatings
         });
     
     } catch (err) {
