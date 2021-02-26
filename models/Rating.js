@@ -7,6 +7,11 @@ const RatingSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
+    coffee_id: {
+        type: String,
+        required: true,
+        trim: true
+    },
     overall: {
         type: Number,
         required: true

@@ -1,17 +1,30 @@
 <h1 class="mt-4">Your Local Shops</h1>
-<body>
+<!-- <body>
   <div class="shopDisplay">
-    <ul>
-      <% shops.forEach(function(shop) { %>
-      <p><%= shop.name %> - <%= shop.address %></p>
-      <a href="shops/<%= shop.id %>">
-        <img src="<%= shop.imageURL %>" style="width: 100px; height: 100px;">
-      </a>
-      <% }) %>
-    </ul>
+    
   </div>
-  <form method="POST" action="/shops">
-    <button class="loadMore">Load More</button>
-  </form>
-</body>
+</body> -->
 <!-- <a href="/users/logout" class="btn btn-secondary">Logout</a> -->
+
+
+<div class="container">
+  <% shops.forEach(function(shop) { %>
+    
+    <div class="col-sm-6">
+      <div class="panel panel-default" id="shopPanel">
+        <a href="shops/<%= shop.id %>">
+          <div class="panel-body" id="shopsBody">
+            <img  src="<%= shop.imageURL %>" class="img-responsive" id="shopImg">
+          </div>
+          <div class="panel-footer">
+            <h3 class="shopTitle"><%= shop.name %></h3>
+            <p><%= shop.address %></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <% }) %>
+</div>
+<form method="POST" action="/shops">
+  <button class="btn-primary">Load More</button>
+</form>

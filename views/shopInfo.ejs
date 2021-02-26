@@ -1,7 +1,26 @@
-<h1 class="mt-4"><%= name %></h1>
-<body>
-    <h2><%= address %></h2>
-    <img src="<%= img %>">
-    <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=<%= formattedName %>&center=<%= lat %>,<%= lng %>&key=AIzaSyBEzVXfJbuPYfezNM29rCoka2sS1aHZ5C8" allowfullscreen></iframe>
-</body>
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-sm-6">
+            <h1 class="mt-4"><%= shopInfo.name %></h1>
+            <h2><%= shopInfo.address %></h2>
+            <p><%= overallRating %>/5</p>
+            <p><%= atmosphereRating %>/5</p>
+            <p><%= qualityRating %>/5</p>
+            <p><%= dairyFreeRating %>/5</p>
+        </div>
+        <div class="col-sm-6">
+            <img id="shopImage" class="img-circle img-responsive" src="<%= shopInfo.img %>">
+        </div>
+
+        <a href="/shops/<%= shopInfo.id %>/rate" class="btn btn-secondary"><i class="fas fa-plus"></i> Add New Rating</a><br>
+    </div>
+    <br>
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="googleMap">
+                <iframe frameborder="0" style="border:0" width="800" height="600"
+                src="https://www.google.com/maps/embed/v1/place?q=<%= formattedName %>&center=<%= shopInfo.lat %>,<%= shopInfo.lng %>&key=AIzaSyBEzVXfJbuPYfezNM29rCoka2sS1aHZ5C8" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

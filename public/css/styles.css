@@ -436,3 +436,45 @@ input[type='radio'] {
 .rating-star span {
   margin-left: -10px;
 }
+/* Shop display CSS */
+
+#shopPanel {
+  transition: 0.5s;
+}
+#shopPanel:hover {
+  transform: scale(1.1);
+}
+
+#shopsBody {
+  align-content: center;
+  padding: 2rem;
+}
+
+#shopImg {
+  position: relative;
+  height: 40rem;
+}
+
+.shopTitle, .shopTitle:hover {
+  text-decoration: none;
+  color: #272727;
+}
+
+/* Shop info CSS */
+
+#shopImage {
+  width: 50%;
+}
+.googleMap {
+  position: relative;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
+}
+.googleMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
