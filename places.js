@@ -1,7 +1,7 @@
 const request = require("request");
 const syncRequest = require("sync-request");
 const { get } = require("https");
-let api = ''; //INSERT API HERE (MESSAGE JOE)
+let api = 'AIzaSyDlYQl1Z4hOssnQSXRaRxXDmwM-6WqWsb8'; //INSERT API HERE (MESSAGE JOE)
 
 // Convert postcode to lat + long
 function postCodeToLatLong(postcode) {

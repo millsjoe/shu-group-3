@@ -6,7 +6,7 @@ const Rating = require('../models/Rating')
 
 //View ratings page
 router.get('/add', ensureAuthenticated, (req, res) => {
-    res.render('ratings/add')
+    res.render('ratings/add', { name: req.user.name })
   })
   
 //Add ratings
@@ -37,6 +37,7 @@ router.get('/edit/:id', ensureAuthenticated, async (req, res) => {
       res.redirect ('/home')
     } else{
       res.render('ratings/edit', {
+        name: req.user.name,
         ratings,
       })
     }
