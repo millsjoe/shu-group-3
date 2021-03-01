@@ -119,8 +119,7 @@ router.get('/shops/:id', async (req,res) => {
 
     const id = req.params.id;
         const shopInfo = await Shop.findOne({id : id});
-        const coffeeRatings = await Rating.find({coffee_shop : id });
-        
+        const coffeeRatings = await Rating.find({coffee_id : id });
         const formattedName = shopInfo.name.replace("&","and");
         let overallRating = 0;
         let atmosphereRating = 0;
@@ -128,17 +127,20 @@ router.get('/shops/:id', async (req,res) => {
         let dairyFreeRating = 0;
         const numRatings = coffeeRatings.length;
 
-        coffeeRatings.forEach(coffeeRating => {
-            overallRating += coffeeRating.overall;
-            atmosphereRating += coffeeRating.atmosphere;
-            qualityRating += coffeeRating.coffee_quality;
-            dairyFreeRating += coffeeRating.dairy_free;
-        });
+        if (numRatings > 0 ){
+            coffeeRatings.forEach(coffeeRating => {
+                overallRating += coffeeRating.overall;
+                atmosphereRating += coffeeRating.atmosphere;
+                qualityRating += coffeeRating.coffee_quality;
+                dairyFreeRating += coffeeRating.dairy_free;
+            });
 
-        overallRating = overallRating/coffeeRatings.length;
-        atmosphereRating = atmosphereRating/coffeeRatings.length;
-        qualityRating = qualityRating/coffeeRatings.length;
-        dairyFreeRating = dairyFreeRating/coffeeRatings.length;
+            overallRating = (overallRating/coffeeRatings.length).toFixed(2);
+            atmosphereRating = (atmosphereRating/coffeeRatings.length).toFixed(2);
+            qualityRating = (qualityRating/coffeeRatings.length).toFixed(2);
+            dairyFreeRating = (dairyFreeRating/coffeeRatings.length).toFixed(2);
+        }
+
 
         return res.render('shopInfo', 
         {
@@ -178,11 +180,6 @@ function increaseLimit() {
     if (max <= shops.length){
         max += 5;
     }
-}
-
-function formatPostcode(postcode) { 
-    console.log(postcode.postCode.toUpperCase().trim());
-    return postcode.postCode.toUpperCase();
 }
 
 String.prototype.toFormattedPostCode = function(){
