@@ -3,23 +3,36 @@
         <div class="col-sm-6">
             <h1 class="mt-4"><%= shopInfo.name %></h1>
             <h2><%= shopInfo.address %></h2>
-            <p><%= numRatings %></p>
-            <p><%= overallRating %>/5</p>
-            <p><%= atmosphereRating %>/5</p>
-            <p><%= qualityRating %>/5</p>
-            <p><%= dairyFreeRating %>/5</p>
         </div>
         <div class="col-sm-6">
-            <img id="shopImage" class="img-circle img-responsive" src="<%= shopInfo.img %>">
+            <img id="shopImage" class="img-circle img-responsive" src="<%= shopInfo.imageURL %>">
         </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12">
+            <% if(numRatings > 0){ %>
 
-        <a href="/shops/<%= shopInfo.id %>/rate" class="btn btn-secondary"><i class="fas fa-plus"></i> Add New Rating</a><br>
+                <p><b>Total Reviews:</b></p>
+                <p><%= numRatings %></p>
+                <p>Overall rating:</p>
+                <p><%= overallRating %>/5</p>
+                <p>Atmosphere rating:</p> 
+                <p><%= atmosphereRating %>/5</p>
+                <p>Quality rating:</p>
+                <p><%= qualityRating %>/5</p>
+                <p>Dairy free rating:</p>
+                <p><%= dairyFreeRating %>/5</p>
+            <% } else { %>
+                <p><b>There are no ratings for this coffee shop</b></p>
+            <% } %>
+            <a href="<%= shopInfo.id %>/rate" class="btn btn-secondary"><i class="fas fa-plus"></i> Add New Rating</a><br>
+        </div>
     </div>
     <br>
     <div class="container">
         <div class="col-sm-12">
             <div class="googleMap">
-                <iframe frameborder="0" style="border:0" width="800" height="600"
+                <iframe class="embed-responsive-item" frameborder="0" style="border:0" width="800" height="600" 
                 src="https://www.google.com/maps/embed/v1/place?q=<%= formattedName %>&center=<%= shopInfo.lat %>,<%= shopInfo.lng %>&key=AIzaSyBEzVXfJbuPYfezNM29rCoka2sS1aHZ5C8" allowfullscreen></iframe>
             </div>
         </div>

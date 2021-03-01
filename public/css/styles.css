@@ -478,10 +478,3 @@ input[type='radio'] {
   height: 0;
   overflow: hidden;
 }
-.googleMap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}

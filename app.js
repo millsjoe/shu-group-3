@@ -77,6 +77,7 @@ app.use('/', require('./routes/index'));
 app.use('/', require('./routes/users'));
 app.use('/ratings', require('./routes/ratings'));
 app.use('/admin', require('./routes/admin'));
+app.use('/shops', require('./routes/shops'));
 
 //Listening on port 3000
 const PORT = process.env.PORT || 3000;
