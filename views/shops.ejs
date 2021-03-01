@@ -10,13 +10,13 @@
 <div class="container">
   <% shops.forEach(function(shop) { %>
     
-    <div class="col-sm-6">
+    <div class="col-sm-6 ">
       <div class="panel panel-default" id="shopPanel">
         <a href="shops/<%= shop.id %>">
           <div class="panel-body" id="shopsBody">
-            <img  src="<%= shop.imageURL %>" class="img-responsive" id="shopImg">
+            <img  src="<%= shop.imageURL %>" class="img-responsive img-rounded" id="shopImg">
           </div>
-          <div class="panel-footer">
+          <div class="panel-footer" id="shopFooter">
             <h3 class="shopTitle"><%= shop.name %></h3>
             <p><%= shop.address %></p>
           </div>

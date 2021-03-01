@@ -439,6 +439,7 @@ input[type='radio'] {
 /* Shop display CSS */
 
 #shopPanel {
+  border-radius: 10px;
   transition: 0.5s;
 }
 #shopPanel:hover {
@@ -446,13 +447,19 @@ input[type='radio'] {
 }
 
 #shopsBody {
+  display: flex;
+  justify-content: center;
   align-content: center;
+  height: 400px;
   padding: 2rem;
 }
 
 #shopImg {
   position: relative;
-  height: 40rem;
+}
+
+#shopFooter {
+  border-radius: 10px;
 }
 
 .shopTitle, .shopTitle:hover {
