@@ -82,20 +82,53 @@ router.post('/register', (req, res) => {
     }
 });
 
+// Local track of login attempts 
+let loginAttempt = 0;
+let reinstateTime;
 //Login Handle
 router.post('/login', (req, res, next) => {
-    passport.authenticate('local', {
-      successRedirect: '/home',
-      failureRedirect: '/login',
-      failureFlash: true
+    passport.authenticate('local', function(err, user, info){
+        if (err) { return next(err); }
+        
+        loginAttempt++; 
+        if (loginAttempt > 5) {
+            enforceCoolDown();
+        }
+        if (!inCoolDown()) {
+            if (!user) { 
+                req.flash('error_msg', `Login attempt ${loginAttempt}/5 failed`);
+                return res.redirect('/login');
+            }
+            req.logIn(user,function(err) {
+                loginAttempt = 0;
+                if (err) { return next(err); }
+                req.flash('success_msg', 'Succesfully logged in');
+                return res.redirect('/home');
+            });
+        } else {
+            req.flash('error_msg', `Too many attempts please allow a cooldown (${(reinstateTime - Date.now())/1000}s)`);
+            return res.redirect('/login');
+        } 
     })(req, res, next);
-  });
-  
+});
   //Logout Handle
-  router.get('/logout', (req, res) => {
+router.get('/logout', (req, res) => {
     req.logout();
     req.flash('success_msg', 'You are logged out');
     res.redirect('/login');
-  });  
+});  
 
+function inCoolDown() {
+
+    if (Date.now() < reinstateTime) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+function enforceCoolDown() {
+    reinstateTime = Date.now() + 30000 //30 seconds;
+    loginAttempt = 0;
+}
 module.exports = router;
