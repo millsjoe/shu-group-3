@@ -166,6 +166,11 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 } 
 
+body {
+  padding-bottom: 120px;
+}
+
+
 h1 {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
   /* font-size: 30px; */
@@ -440,6 +445,7 @@ input[type='radio'] {
 
 #shopPanel {
   border-radius: 10px;
+  box-shadow: 4px 2px 10px #cccccc;
   transition: 0.5s;
 }
 #shopPanel:hover {
@@ -451,11 +457,11 @@ input[type='radio'] {
   justify-content: center;
   align-content: center;
   height: 400px;
-  padding: 2rem;
 }
 
 #shopImg {
   position: relative;
+  border-radius: 10px;
 }
 
 #shopFooter {
@@ -467,6 +473,10 @@ input[type='radio'] {
   color: #272727;
 }
 
+#shopsFluid {
+  padding-right: 50px;
+  padding-left: 50px;
+}
 /* Shop info CSS */
 
 #shopImage {

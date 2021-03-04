@@ -1,16 +1,9 @@
-<h1 class="mt-4">Your Local Shops</h1>
-<!-- <body>
-  <div class="shopDisplay">
-    
-  </div>
-</body> -->
-<!-- <a href="/users/logout" class="btn btn-secondary">Logout</a> -->
+<h1 class="mt-4" style="text-align: center;">Your Local Shops</h1>
 
-
-<div class="container">
+<div class="container-fluid" id="shopsFluid">
   <% shops.forEach(function(shop) { %>
     
-    <div class="col-sm-6 ">
+    <div class="col-sm-4 ">
       <div class="panel panel-default" id="shopPanel">
         <a href="/shops/<%= shop.id %>">
           <div class="panel-body" id="shopsBody">
@@ -25,6 +18,11 @@
     </div>
     <% }) %>
 </div>
-<form method="POST" action="/shops">
-  <button class="btn-primary">Load More</button>
-</form>
+<div class="container-fluid">
+  <button class="btn btn-primary btn-lg" style="float: left;"><a href="/home" style="color: white;">Home</a></button>
+  <% if (!totalShops) { %>
+    <form method="POST" action="/shops/results-more" style="float: right;">
+      <button class="btn btn-primary btn-lg">Load More</button>
+    </form>
+  <% } %>
+</div>

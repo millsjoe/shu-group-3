@@ -8,16 +8,19 @@ const Rating = require('../models/Rating')
 // Local storing of shops to display e.g start with 5 
 let max = 5;
 let shops = [];
+let totalShops = false;
 
 // List of shops from a postcode
 router.post('/results', ensureAuthenticated, (req, res) => {
+    totalShops = false;
+    max = 5;
     let { postCode } = req.body;
     postCode = postCode.toFormattedPostCode();
     Shop.find({ postcodes: postCode}).then(shop => {
         if (shop.length != 0){
             shops = shop;
             const toReturn = getLocalShops(max);
-            res.render('shops', {shops: toReturn})
+            res.render('shops', {shops: toReturn, totalShops})
         } else {
             setLocalShops(postCode);
             const networkShops = shops;
@@ -53,16 +56,16 @@ router.post('/results', ensureAuthenticated, (req, res) => {
                 });
             });
             const toReturn = getLocalShops(max);
-            res.render('shops', {shops: toReturn});
+            res.render('shops', {shops: toReturn, totalShops});
         }
     });
 });
 
 // Load more (increasing local variable max)
-router.post('/', ensureAuthenticated, (req, res) => {
+router.post('/results-more', ensureAuthenticated, (req, res) => {
     increaseLimit();
     const shopsToReturn = getLocalShops(max);
-    res.render('shops', {shops: shopsToReturn});
+    res.render('shops', {shops: shopsToReturn, totalShops});
 });
 
 // Displaying an individual shop
@@ -133,6 +136,9 @@ function getLocalShops(numShops) {
 function increaseLimit() {
     if (max <= shops.length){
         max += 5;
+    }
+    if (max >= shops.length){
+        totalShops = true;
     }
 }
 
