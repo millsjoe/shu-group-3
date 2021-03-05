@@ -493,6 +493,7 @@ input[type='radio'] {
   border: 0; 
   width: -webkit-fill-available; 
   height: 800px
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 400px) {
