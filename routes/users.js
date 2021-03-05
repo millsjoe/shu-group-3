@@ -25,14 +25,15 @@ router.post('/register', (req, res) => {
         errors.push({ msg: 'Please fill in all fields'});
     }
 
+    //Check password is secure
+    var securePassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+    if (!password.match(securePassword)) {
+        errors.push({msg: 'Password is not secure enough. Your password must be 8-15 characters long containing at least one lowercase letter, one upercase letter, one numeric digit and one special character.' });
+    }
+
     //Check passwords match
     if (password !== password2) {
         errors.push({msg: 'Passwords do not match'});
-    }
-
-    //Check password length
-    if (password.length < 6) {
-        errors.push({msg: 'Password should be at least 6 characters'});
     }
 
     if (errors.length > 0) {

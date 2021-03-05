@@ -2,29 +2,11 @@ const express = require("express");
 const router = express.Router();
 const { isAdmin } = require('../config/auth');
 
-const Rating = require('../models/Rating')
-
-//Get all ratings for admin
-router.get('/admin', isAdmin, async (req, res) => {
-    try {
-      const allRatings = await Rating.find()
-    
-      if (!allRatings) {
-        req.flash('error_msg', 'There are no ratings')
-      }
-
-    res.render('admin', {
-        allRatings,
-    })
-
-    } catch (err) {
-      console.error(err)
-      res.render('error/500')
-    }
-  })
+const Rating = require('../models/Rating');
+const User = require("../models/User");
 
 //Admin Delete rating
-router.delete('/:id', isAdmin, async (req, res) => {
+router.delete('/rating/:id', isAdmin, async (req, res) => {
     try {
       await Rating.remove({_id: req.params.id })
       req.flash('success_msg', 'Rating deleted');
@@ -35,13 +17,13 @@ router.delete('/:id', isAdmin, async (req, res) => {
     }
   })
 
-  // Show edit page for admin
-router.get('/edit/:id', isAdmin, async (req, res) => {
+  // Show edit rating page for admin
+router.get('/editRating/:id', isAdmin, async (req, res) => {
   try {
     const allRatings = await Rating.findOne({
       _id: req.params.id
     })
-      res.render('admin/edit', {
+      res.render('admin/editRating', {
         allRatings,
       })
 
@@ -72,4 +54,35 @@ router.put ('/:id', isAdmin, async (req, res) => {
     return res.render('error/500')
   }
 })
+
+//Show edit user page for Admin
+router.get('/viewUser/:id', isAdmin, async (req, res) => {
+  try {
+    const userInfo = await User.findOne({
+      _id: req.params.id
+    })
+    const userRatings = await Rating.find({user: req.params.id})
+
+      res.render('admin/viewUser', {
+        userInfo, userRatings,
+      })
+
+  } catch (err) {
+    console.error(err)
+    res.render('error/500')
+  }
+})
+
+//Delete user (doesn't actually work)
+router.delete('/user/:id', isAdmin, async (req, res) => {
+  try {
+    await User.remove({_id: req.params.id })
+    req.flash('success_msg', 'User deleted');
+    res.redirect('/admin')
+  } catch (err) {
+    console.error(err)
+    return res.render('error/500')
+  }
+})
+
   module.exports = router;
