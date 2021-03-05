@@ -45,6 +45,7 @@ router.get('/profile', ensureAuthenticated, async (req, res) => {
         const ratings = await Rating.find({user: req.user.id})
         
         res.render('profile', {
+            email: req.user.email,
             name: req.user.name,
             ratings
         })

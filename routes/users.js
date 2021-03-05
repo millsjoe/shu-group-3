@@ -89,6 +89,7 @@ let reinstateTime;
 //Login Handle
 router.post('/login', (req, res, next) => {
     passport.authenticate('local', function(err, user, info){
+        const { name, email } = req.body;
         if (err) { return next(err); }
         
         loginAttempt++; 
@@ -104,7 +105,11 @@ router.post('/login', (req, res, next) => {
                 loginAttempt = 0;
                 if (err) { return next(err); }
                 req.flash('success_msg', 'Succesfully logged in');
-                return res.redirect('/home');
+                if (email === 'admin@admin.com') {
+                    return res.redirect('/admin');
+                } else {
+                    return res.redirect('/home');
+                }
             });
         } else {
             req.flash('error_msg', `Too many attempts please allow a cooldown (${(reinstateTime - Date.now())/1000}s)`);
