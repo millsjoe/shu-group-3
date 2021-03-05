@@ -2,7 +2,9 @@
 <div class="container">
   <h1 class="mt-4">Profile</h1>
   <p class="lead mb-3">Welcome <%= name %></p>
-  
+  <% if(email === 'admin@admin.com') { %>
+    <a href="/admin" class="btn btn-primary">Admin Page</a>
+  <% } %>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <div class="profilecard">

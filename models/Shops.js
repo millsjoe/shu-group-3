@@ -1,5 +1,4 @@
 //Schema for shops for database
-
 const mongoose = require('mongoose');
 
 const ShopSchema = new mongoose.Schema({
@@ -30,7 +29,6 @@ const ShopSchema = new mongoose.Schema({
     postcodes: {
         type: [String],
         required: true
-
     }
 });
 

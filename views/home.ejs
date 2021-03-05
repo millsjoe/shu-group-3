@@ -3,26 +3,29 @@
     <div class="col-sm-6">
       <h1>Welcome <%= name %>!</h1>
       <p>
-        Get started below by using the map to find a local coffeeshop where you can read recent ratings or publish your own.
+        Get started below by using the map to find a local coffee shop where you can read recent ratings or publish your own.
         You can find all your recent ratings within your profile page.
       </p>
       <a href="/profile" class="btn btn-primary btn-lg" >Your Profile</a>
+      <br>
+      <br>
     </div>
     <div class="col-sm-6">
-      <img class="img-responsive" src="../Images/cover-photo.png" alt="Image showing coffee and rating examples">
+      <img class="img-responsive" src="../Images/cover-photo.png" alt="Coffee and rating examples">
     </div>
   </div>
 </div>
 
 
 <div class="container" id="map">
-  <div class="col-sm-6 text-center">
+  <!-- <div class="col-sm-6 text-center">
     <%- include ("./partials/map"); %>
-  </div>
-  <div class="col-sm-6 text-center">
+  </div> -->
+  <div class="col-md-6 m-auto col-md-offset-3 text-center">
     <div class="form-group">
       <div class="postcodeSubmit">
         <form method="POST" action="/shops/results">
+          <h1 class="search">Find your next caffeine fix</h1>
           <label class="control-label">Search by postcode</label>
           <div class="input-group" id="map-search">
             <input type="text" name="postCode" class="form-control"/>

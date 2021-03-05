@@ -24,7 +24,7 @@ router.get('/editRating/:id', isAdmin, async (req, res) => {
       _id: req.params.id
     })
       res.render('admin/editRating', {
-        allRatings,
+        allRatings, name: req.user.name,
       })
 
   } catch (err) {
@@ -64,7 +64,7 @@ router.get('/viewUser/:id', isAdmin, async (req, res) => {
     const userRatings = await Rating.find({user: req.params.id})
 
       res.render('admin/viewUser', {
-        userInfo, userRatings,
+        userInfo, userRatings, name: req.user.name,
       })
 
   } catch (err) {
