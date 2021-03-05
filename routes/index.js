@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const { ensureAuthenticated, isAdmin } = require('../config/auth');
-const Rating = require('../models/Rating')
+const Rating = require('../models/Rating');
+const User = require("../models/User");
 
 //Welcome page (not logged in)
 router.get('/', (req, res) => res.render('index'));
@@ -24,11 +25,12 @@ router.get('/home', ensureAuthenticated, async (req, res) => {
 //Admin page
 router.get('/admin', isAdmin, async (req, res) => {
     try {
-        const allRatings = await Rating.find()
+        const allRatings = await Rating.find();
+        const allUsers = await User.find()
         
         res.render('admin', {
             name: req.user.name,
-            allRatings
+            allRatings, allUsers,
         })
     }   catch (err) {
         console.error(err)
