@@ -20,7 +20,11 @@ router.post('/results', ensureAuthenticated, (req, res) => {
         if (shop.length != 0){
             shops = shop;
             const toReturn = getLocalShops(max);
-            res.render('shops', {shops: toReturn, totalShops})
+            res.render('shops', {
+                name: req.user.name,
+                shops: toReturn, 
+                totalShops
+            })
         } else {
             setLocalShops(postCode);
             const networkShops = shops;
@@ -56,7 +60,11 @@ router.post('/results', ensureAuthenticated, (req, res) => {
                 });
             });
             const toReturn = getLocalShops(max);
-            res.render('shops', {shops: toReturn, totalShops});
+            res.render('shops', {
+                name: req.user.name,
+                shops: toReturn, 
+                totalShops
+            });
         }
     });
 });
@@ -65,7 +73,11 @@ router.post('/results', ensureAuthenticated, (req, res) => {
 router.post('/results-more', ensureAuthenticated, (req, res) => {
     increaseLimit();
     const shopsToReturn = getLocalShops(max);
-    res.render('shops', {shops: shopsToReturn, totalShops});
+    res.render('shops', {
+        name: req.user.name,
+        shops: shopsToReturn, 
+        totalShops
+    });
 });
 
 // Displaying an individual shop
@@ -99,6 +111,7 @@ router.get('/:id', ensureAuthenticated, async (req,res) => {
 
         return res.render('shopInfo', 
         {
+            name: req.user.name,
             shopInfo, 
             formattedName, 
             overallRating, 
@@ -119,7 +132,11 @@ router.get('/:id/rate', ensureAuthenticated, async (req, res) => {
     const placeID = req.params.id;
     const shopInfo = await Shop.findOne({id : placeID});
 
-    res.render('ratings/add', {name : req.user.name, placeID, shopInfo});
+    res.render('ratings/add', {
+        name : req.user.name, 
+        placeID, 
+        shopInfo
+    });
 });
 
 // Call to GoogleAPI
