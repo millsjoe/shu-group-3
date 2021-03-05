@@ -481,10 +481,12 @@ input[type='radio'] {
 
 #shopImage {
   width: 50%;
+  margin-top: 30px;
+  border-radius: 10px;
 }
-.googleMap {
-  position: relative;
-  padding-bottom: 75%; 
-  height: 0;
-  overflow: hidden;
+
+.googleMap iframe {
+  border: 0; 
+  width: -webkit-fill-available; 
+  height: 800px
 }
