@@ -1,4 +1,4 @@
-# DTSS Assignment 1 'CoffeeHouse' - Group 3
+# DDSA Assignment 1 'CoffeeHouse' - Group 3
 
 ## How to install
 - Things needed to run the application
