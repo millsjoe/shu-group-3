@@ -53,7 +53,6 @@
                                   <td><%= ratings.favourite_drink %></td>
                                   <td><a href="/ratings/edit/<%=ratings.id%>">Edit</a></td>
                                   <td>
-                                    <!-- <a href="/ratings/delete/<%=ratings.id%>">Delete</a> -->
                                     <form action="ratings/<%=ratings.id%>" method="POST" id="delete-form">
                                       <input type="hidden" name="_method" value="DELETE">
                                       <button type="submit" class="btn btn-default">

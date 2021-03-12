@@ -73,7 +73,7 @@ router.get('/viewUser/:id', isAdmin, async (req, res) => {
   }
 })
 
-//Delete user (doesn't actually work)
+//Delete user
 router.delete('/user/:id', isAdmin, async (req, res) => {
   try {
     await User.remove({_id: req.params.id })
