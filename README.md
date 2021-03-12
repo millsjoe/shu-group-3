@@ -21,7 +21,7 @@ e.g. `$ cd Desktop/project`
 - To run the application
 1. Make sure you have followed the above steps for setup.
 2. Open the project in your IDE
-3. Run 'node app.js'
+3. Run `node app.js`
 4. Load 'localhost:3000' in your browser
 5. Database is hosted on MongoDB cloud so can be viewed through this link - (account required) https://cloud.mongodb.com/v2/601c020fd7d91e6d2ecf559e#metrics/replicaSet/601c033926a2f814ab92d082/explorer/ddsa
 
@@ -35,14 +35,14 @@ Chloe Williams
 Our applications allows users to search and rate local coffeeshops in their area.
 
 ## Technology stack:
-- HTML â€“ Front end website
-- CSS, Bootstrap â€“ Front end styling of website
-- JavaScript â€“ Business logic
-- MongoDB â€“ Data retention
-- Slack â€“ Group communications
-- Trello â€“ Kanban/Project Board management
-- GitHub â€“ Source Control 
-- Visual Studio Code â€“ Development environment
+- HTML - Front end website
+- CSS, Bootstrap - Front end styling of website
+- JavaScript - Business logic
+- MongoDB - Data retention
+- Slack - Group communications
+- Trello - Kanban/Project Board management
+- GitHub - Source Control 
+- Visual Studio Code - Development environment
 
 ## Work Approach:
 
@@ -54,7 +54,7 @@ We came up with a backlog with MoSCoW notation (Must have, should have, could ha
 ### Work strategy
 Due to COVID restrictions, we developed this project whilst working fully remote and often had Zoom calls where we would share our screen to look at code. We also pair programmed certain features to remove unnecessary mistakes and to assist as we found ourselves at different technical capabilities. 
 
-To protect our master branch from breaking changes and also to make sure people have greater visibility over code that they havenâ€™t worked on, a peer review process is in place in the GitHub repository where at least one other developer must look at and approve the code before it can be merged into the master branch.
+To protect our master branch from breaking changes and also to make sure people have greater visibility over code that they haven't worked on, a peer review process is in place in the GitHub repository where at least one other developer must look at and approve the code before it can be merged into the master branch.
 
 There was a feature freeze agreed by the team for Friday 5th March, this is to allow time to polish the product and to stop any new features from breaking the application.
 
@@ -84,7 +84,7 @@ The application has 4 main functions:
 
 3. A user can view, edit and delete all the ratings they have made from their profile page.
 
-The application is being developed as a â€œmobile firstâ€ application. The website will still function the same in a computer web browser however will be styled differently. The wireframes were used as a guide when we were first generating ideas as to how the application would look.
+The application is being developed as a "mobile first" application. The website will still function the same in a computer web browser however will be styled differently. The wireframes were used as a guide when we were first generating ideas as to how the application would look.
 
 ## Wireframes:
 ![Detail - Desktop](https://user-images.githubusercontent.com/46544086/110933761-16886c00-8325-11eb-8eff-f4eeda0ac75b.png)
