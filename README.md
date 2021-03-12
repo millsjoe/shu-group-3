@@ -99,9 +99,9 @@ The application is being developed as a "mobile first" application. The website 
 ![Sign up - Mobile](https://user-images.githubusercontent.com/46544086/110933822-256f1e80-8325-11eb-8b6d-2f1cb4f0be8d.png)
 
 ## Sequence Diagrams:
-[Ratings_Sequence_Diagram.pdf](https://github.com/millsjoe/shu-group-3/files/6129595/Ratings_Sequence_Diagram.pdf)
-[Register_Sequence_Diagram.pdf](https://github.com/millsjoe/shu-group-3/files/6129599/Register_Sequence_Diagram.pdf)
-[Login_Sequence_Diagram.pdf](https://github.com/millsjoe/shu-group-3/files/6129600/Login_Sequence_Diagram.pdf)
+![Ratings_Sequence_Diagram](https://user-images.githubusercontent.com/46544086/110935415-4afd2780-8327-11eb-8139-a0b30a46c9a4.png)
+![Register_Sequence_Diagram](https://user-images.githubusercontent.com/46544086/110935418-4b95be00-8327-11eb-999d-30fae087f845.png)
+![Login_Sequence_Diagram](https://user-images.githubusercontent.com/46544086/110935423-4c2e5480-8327-11eb-8fed-a0d9ecbe4750.png)
 ![API_Sequence_Diagram](https://user-images.githubusercontent.com/46544086/110933934-48013780-8325-11eb-9d50-3e4249fbe58d.png)
 
 ## Application Security
