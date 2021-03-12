@@ -12,11 +12,8 @@ e.g. `$ cd Desktop/project`
 - Git clone repo
 `$ git clone https://github.com/millsjoe/shu-group-3.git`
 
-- Install node
-`$ npm install`
-
 - Install dependencies
-`$ npm -i`
+`$ npm i`
 
 - To run the application
 1. Make sure you have followed the above steps for setup.
