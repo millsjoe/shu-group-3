@@ -26,10 +26,10 @@ e.g. `$ cd Desktop/project`
 5. Database is hosted on MongoDB cloud so can be viewed through this link - (account required) https://cloud.mongodb.com/v2/601c020fd7d91e6d2ecf559e#metrics/replicaSet/601c033926a2f814ab92d082/explorer/ddsa
 
 ## Development Team:
-Joe Mills
-Lucy Burgin
-Fiona Simons
-Chloe Williams
+- Joe Mills
+- Lucy Burgin
+- Fiona Simons
+- Chloe Williams
 
 ## Application Summary:
 Our applications allows users to search and rate local coffeeshops in their area.
