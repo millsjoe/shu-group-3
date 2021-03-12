@@ -49,14 +49,14 @@ Our applications allows users to search and rate local coffeeshops in their area
 ### Agile Methodology - Kanban
 As a team we decided to use Kanban as a way of working to follow Agile methodologies as having an open framework helped us adapt the working environment to each individual team member. We created a Kanban board on Trello so we could easy pick up tickets as necessary and where time allowed within our daily work routines. We decided not to follow the Scrum methodology due to its strict ceremonies, however we had regular catch-ups and weekly meetings throughout the development of our project.
 
-We came up with a backlog with MoSCoW notation (Must have, should have, could have, would have) informing priorities. Each team member could claim any ticket, and is then responsible for completing the work associated.
+To arrange the tasks in order of priority we used MOSCOW (must have, should have, could have and won't have). Each group member could work on any ticket and would then be responsible with completing the work and if this group member was struggling they could pair program with another group member.
 
 ### Work strategy
 Due to COVID restrictions, we developed this project whilst working fully remote and often had Zoom calls where we would share our screen to look at code. We also pair programmed certain features to remove unnecessary mistakes and to assist as we found ourselves at different technical capabilities. 
 
-To protect our master branch from breaking changes and also to make sure people have greater visibility over code that they haven't worked on, a peer review process is in place in the GitHub repository where at least one other developer must look at and approve the code before it can be merged into the master branch.
+To protect our main branch from breaking the application and to make sure people have greater visibility over code that they haven't worked on, a peer review process was in place in the GitHub repository where at least one other group member must look at and approve the code before it can be merged into the main branch.
 
-There was a feature freeze agreed by the team for Friday 5th March, this is to allow time to polish the product and to stop any new features from breaking the application.
+We placed a development freeze on our group from Friday 5th March, to allow us time to refine and to ensure that any new features wouldn't break the application.
 
 ### Communication
 There is a team Slack channel that has been set up to facilitate a communications hub where we arranged meetings and posted general questions about the application. We could also send screenshots, videos and code snippets within Slack to help demonstrate any issues within our messages. Slack was chosen as its used within the wider organisation. 
